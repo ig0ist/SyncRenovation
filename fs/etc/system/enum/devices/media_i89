@@ -1,0 +1,9 @@
+#
+# Definitions for multimedia devices
+#
+
+device(pci, ven=109e, dev=0350)		# Brooktree Bt848
+device(pci, ven=109e, dev=036e)		# Conexant Fusion 878A
+	requires(io-media,)
+	requires(sleep 1,)		# Nothing to do a "waitfor" on...
+	mount("-Tio-media -ovid=0x$(ven),did=0x$(dev),pci=$(index) /lib/dll/devm-bt8x8.so",)

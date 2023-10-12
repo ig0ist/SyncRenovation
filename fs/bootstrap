@@ -1,0 +1,2 @@
+[machine=40 entry=0x8010097c] startup
+[type=file gid=0 uid=0 perms=0777 mtime=1503558122 +raw flags=81 phys_align=4K] proc/boot/procnto-smp-instr

@@ -1,0 +1,9 @@
+export TERM=qansi
+export HOME=/
+export SHELL=/bin/sh
+export CPUROOT=/fs
+export TMPDIR=/tmp
+export LD_LIBRARY_PATH=/proc/boot:/lib:/usr/lib:/lib/dll
+export PATH=/proc/boot:/bin:/usr/bin:/sbin:/usr/sbin
+export QQNX_PHYSICAL_SCREEN_SIZE=600,400
+export GRAPHICS_ROOT=/usr/lib/graphics/omap5430ES2_0

@@ -1,0 +1,210 @@
+[image=0x80100000]
+[virtual=binary +compress] bootstrap
+[+page_align]
+[prefix=""]
+[mount="/"]
+[type=file gid=0 uid=0 perms=0666 mtime=1503558359 +raw flags=0 phys_align=4K +script +raw] proc/boot/.script=proc/boot/.script_i3
+[type=link gid=0 uid=0 perms=01777 mtime=1503558359 flags=0] bin/sh=/proc/boot/ksh
+[type=link gid=0 uid=0 perms=01777 mtime=1503558359 flags=0] dev/console=/dev/ser1
+[type=link gid=0 uid=0 perms=01777 mtime=1503558359 flags=0] tmp=/dev/shmem
+[type=dir gid=0 uid=0 dperms=0777 mtime=0] fs
+[type=file gid=0 uid=0 perms=0777 mtime=1503558125 +raw flags=80 phys_align=64K] proc/boot/libc.so.3=proc/boot/libc.so.3_i3221225480
+[type=link gid=0 uid=0 perms=0777 mtime=1503558125 flags=80] proc/boot/libc.so=libc.so.3
+[type=file gid=0 uid=0 perms=0777 mtime=1503558136 +raw flags=80 phys_align=64K] proc/boot/libm.so.2=proc/boot/libm.so.2_i3221225482
+[type=link gid=0 uid=0 perms=0777 mtime=1503558136 flags=80] proc/boot/libm.so=libm.so.2
+[type=file gid=0 uid=0 perms=0777 mtime=1503558126 +raw flags=80 phys_align=64K] proc/boot/libcam.so.2=proc/boot/libcam.so.2_i3221225484
+[type=link gid=0 uid=0 perms=0777 mtime=1503558126 flags=80] proc/boot/libcam.so=libcam.so.2
+[type=file gid=0 uid=0 perms=0777 mtime=1503558127 +raw flags=80 phys_align=64K] proc/boot/cam-disk.so=proc/boot/cam-disk.so_i3221225486
+[type=file gid=0 uid=0 perms=0777 mtime=1503558127 +raw flags=80 phys_align=64K] proc/boot/fs-qnx6.so=proc/boot/fs-qnx6.so_i3221225487
+[type=file gid=0 uid=0 perms=0777 mtime=1503558127 +raw flags=80 phys_align=4K] proc/boot/fs-nt.so=proc/boot/fs-nt.so_i3221225488
+[type=file gid=0 uid=0 perms=0777 mtime=1503558127 +raw flags=80 phys_align=64K] proc/boot/fs-dos.so=proc/boot/fs-dos.so_i3221225489
+[type=file gid=0 uid=0 perms=0777 mtime=1503558127 +raw flags=80 phys_align=64K] proc/boot/fs-exfat.so=proc/boot/fs-exfat.so_i3221225490
+[type=file gid=0 uid=0 perms=0777 mtime=1503558127 +raw flags=80 phys_align=64K] proc/boot/io-blk.so=proc/boot/io-blk.so_i3221225491
+[type=file gid=0 uid=0 perms=0777 mtime=1503554355 +raw flags=80 phys_align=4K] proc/boot/libusbdi.so.2=proc/boot/libusbdi.so.2_i3221225492
+[type=link gid=0 uid=0 perms=0777 mtime=1503554355 flags=80] proc/boot/libusbdi.so=libusbdi.so.2
+[type=file gid=0 uid=0 perms=0777 mtime=1503558127 +raw flags=80 phys_align=64K] proc/boot/devu-uevm5432-ehci-omap3.so=proc/boot/devu-uevm5432-ehci-omap3.so_i3221225494
+[type=file gid=0 uid=0 perms=0777 mtime=1503558127 +raw flags=80 phys_align=4K] proc/boot/devu-sevm-omap5-xhci.so=proc/boot/devu-sevm-omap5-xhci.so_i3221225495
+[type=file gid=0 uid=0 perms=0777 mtime=1503558136 +raw flags=80 phys_align=4K] lib/libhiddi.so.1=lib/libhiddi.so.1_i3221225496
+[type=link gid=0 uid=0 perms=0777 mtime=1503558136 flags=80] lib/libhiddi.so=libhiddi.so.1
+[type=file gid=0 uid=0 perms=0777 mtime=1503554355 +raw flags=80 phys_align=4K] lib/libpps.so.1=lib/libpps.so.1_i3221225498
+[type=link gid=0 uid=0 perms=0777 mtime=1503554355 flags=80] lib/libpps.so=libpps.so.1
+[type=file gid=0 uid=0 perms=0777 mtime=1503558136 +raw flags=80 phys_align=4K] lib/libinputevents.so.1=lib/libinputevents.so.1_i3221225500
+[type=link gid=0 uid=0 perms=0777 mtime=1503558136 flags=80] lib/libinputevents.so=libinputevents.so.1
+[type=file gid=0 uid=0 perms=0777 mtime=1503558136 +raw flags=80 phys_align=4K] lib/libkalman.so.1=lib/libkalman.so.1_i3221225502
+[type=link gid=0 uid=0 perms=0777 mtime=1503558136 flags=80] lib/libkalman.so=libkalman.so.1
+[type=file gid=0 uid=0 perms=0777 mtime=1503558134 +raw flags=80 phys_align=4K] usr/lib/libdisputil.so.2=usr/lib/libdisputil.so.2_i3221225504
+[type=link gid=0 uid=0 perms=0777 mtime=1503558134 flags=80] usr/lib/libdisputil.so=libdisputil.so.2
+[type=file gid=0 uid=0 perms=0777 mtime=1503554373 +raw flags=80 phys_align=4K] usr/lib/libWFD.so=usr/lib/libWFD.so_i3221225506
+[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80 phys_align=4K] usr/lib/libWFD.so.1=usr/lib/libWFD.so.1_i3221225507
+[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80 phys_align=4K] usr/lib/libswblit.so=usr/lib/libswblit.so_i3221225508
+[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80 phys_align=4K] usr/lib/libswblit.so.1=usr/lib/libswblit.so.1_i3221225509
+[type=file gid=0 uid=0 perms=0777 mtime=1503558183 +raw flags=80 phys_align=4K] usr/lib/libwfdcfg.so.0=usr/lib/libwfdcfg.so.0_i3221225510
+[type=link gid=0 uid=0 perms=0777 mtime=1503558183 flags=80] usr/lib/libwfdcfg-sync3.so=libwfdcfg.so.0
+[type=file gid=0 uid=0 perms=0644 mtime=1503558135 +raw flags=0 phys_align=4K] usr/lib/graphics/omap5430ES2_0/graphics.conf=usr/lib/graphics/omap5430ES2_0/graphics.conf_i40
+[type=file gid=0 uid=0 perms=0777 mtime=1503558135 +raw flags=80 phys_align=1M] usr/lib/graphics/omap5430ES2_0/libWFDomap5430ES2_0.so=usr/lib/graphics/omap5430ES2_0/libWFDomap5430ES2_0.so_i3221225513
+[type=file gid=0 uid=0 perms=0777 mtime=1503558135 +raw flags=80 phys_align=64K] usr/lib/graphics/omap5430ES2_0/libsrv_um.so=usr/lib/graphics/omap5430ES2_0/libsrv_um.so_i3221225514
+[type=file gid=0 uid=0 perms=0777 mtime=1503558135 +raw flags=80 phys_align=64K] usr/lib/graphics/omap5430ES2_0/libpvr2d.so=usr/lib/graphics/omap5430ES2_0/libpvr2d.so_i3221225515
+[type=file gid=0 uid=0 perms=0777 mtime=1503558135 +raw flags=80 phys_align=64K] usr/lib/graphics/omap5430ES2_0/pvrsrv.so=usr/lib/graphics/omap5430ES2_0/pvrsrv.so_i3221225516
+[type=file gid=0 uid=0 perms=0777 mtime=1503558135 +raw flags=80 phys_align=64K] usr/lib/graphics/omap5430ES2_0/pvrsrvinit.so=usr/lib/graphics/omap5430ES2_0/pvrsrvinit.so_i3221225517
+[type=file gid=0 uid=0 perms=0777 mtime=1503558135 +raw flags=80 phys_align=1M] usr/lib/graphics/omap5430ES2_0/libusc.so=usr/lib/graphics/omap5430ES2_0/libusc.so_i3221225518
+[type=file gid=0 uid=0 perms=0777 mtime=1503558135 +raw flags=80 phys_align=64K] usr/lib/graphics/omap5430ES2_0/libIMGegl.so=usr/lib/graphics/omap5430ES2_0/libIMGegl.so_i3221225519
+[type=file gid=0 uid=0 perms=0777 mtime=1503558135 +raw flags=80 phys_align=4K] usr/lib/graphics/omap5430ES2_0/wsegl-screen.so=usr/lib/graphics/omap5430ES2_0/wsegl-screen.so_i3221225520
+[type=file gid=0 uid=0 perms=0777 mtime=1503558135 +raw flags=80 phys_align=64K] usr/lib/graphics/omap5430ES2_0/libImgGLESv1_CM.so=usr/lib/graphics/omap5430ES2_0/libImgGLESv1_CM.so_i3221225521
+[type=file gid=0 uid=0 perms=0777 mtime=1503558136 +raw flags=80 phys_align=4K] lib/dll/screen-pvr2d.so=lib/dll/screen-pvr2d.so_i3221225522
+[type=file gid=0 uid=0 perms=0777 mtime=1503554375 +raw flags=80 phys_align=4K] usr/lib/libEGL.so.1=usr/lib/libEGL.so.1_i3221225523
+[type=link gid=0 uid=0 perms=0777 mtime=1503554375 flags=80] usr/lib/libEGL.so=libEGL.so.1
+[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80 phys_align=4K] usr/lib/libGLESv1_CM.so.1=usr/lib/libGLESv1_CM.so.1_i3221225525
+[type=link gid=0 uid=0 perms=0777 mtime=1503554374 flags=80] usr/lib/libGLESv1_CM.so=libGLESv1_CM.so.1
+[type=file gid=0 uid=0 perms=0777 mtime=1503558135 +raw flags=80 phys_align=64K] usr/lib/libscreen.so.1=usr/lib/libscreen.so.1_i3221225527
+[type=link gid=0 uid=0 perms=0777 mtime=1503558135 flags=80] usr/lib/libscreen.so=libscreen.so.1
+[type=file gid=0 uid=0 perms=0777 mtime=1503558136 +raw flags=80 phys_align=64K] usr/lib/libNS_CoreUnified.so=usr/lib/libNS_CoreUnified.so_i3221225529
+[type=file gid=0 uid=0 perms=0777 mtime=1503558136 +raw flags=80 phys_align=64K] usr/lib/libNS_FrameworkUnified.so=usr/lib/libNS_FrameworkUnified.so_i3221225530
+[type=file gid=0 uid=0 perms=0777 mtime=1503558136 +raw flags=80 phys_align=4K] usr/lib/libNS_UtilityCenter.so=usr/lib/libNS_UtilityCenter.so_i3221225531
+[type=file gid=0 uid=0 perms=0777 mtime=1503558136 +raw flags=80 phys_align=64K] usr/lib/libNS_ConfigParser.so=usr/lib/libNS_ConfigParser.so_i3221225532
+[type=file gid=0 uid=0 perms=0777 mtime=1503558136 +raw flags=80 phys_align=64K] usr/lib/libNS_ExtractVerifyCore.so=usr/lib/libNS_ExtractVerifyCore.so_i3221225533
+[type=file gid=0 uid=0 perms=0777 mtime=1503558136 +raw flags=80 phys_align=4K] usr/lib/libSS_SCM_Cob_Lib.so=usr/lib/libSS_SCM_Cob_Lib.so_i3221225534
+[type=file gid=0 uid=0 perms=0777 mtime=1503558136 +raw flags=80 phys_align=4K] usr/lib/libVS_CANShadowIf.so=usr/lib/libVS_CANShadowIf.so_i3221225535
+[type=file gid=0 uid=0 perms=0666 mtime=1503558129 +raw flags=0 phys_align=4K] images/bar.img=images/bar.img_i64
+[type=file gid=0 uid=0 perms=0666 mtime=1503558129 +raw flags=0 phys_align=64K] images/ford1.img=images/ford1.img_i65
+[type=file gid=0 uid=0 perms=0666 mtime=1503558130 +raw flags=0 phys_align=64K] images/ford2.img=images/ford2.img_i66
+[type=file gid=0 uid=0 perms=0666 mtime=1503558130 +raw flags=0 phys_align=64K] images/ford3.img=images/ford3.img_i67
+[type=file gid=0 uid=0 perms=0666 mtime=1503558131 +raw flags=0 phys_align=4K] images/bar_SDM4.img=images/bar_SDM4.img_i68
+[type=file gid=0 uid=0 perms=0666 mtime=1503558131 +raw flags=0 phys_align=64K] images/ford1_SDM4.img=images/ford1_SDM4.img_i69
+[type=file gid=0 uid=0 perms=0666 mtime=1503558129 +raw flags=0 phys_align=64K] images/ford2_SDM4.img=images/ford2_SDM4.img_i70
+[type=file gid=0 uid=0 perms=0666 mtime=1503558129 +raw flags=0 phys_align=64K] images/ford3_SDM4.img=images/ford3_SDM4.img_i71
+[type=file gid=0 uid=0 perms=0666 mtime=1503558129 +raw flags=0 phys_align=64K] images/bar_SDM10.img=images/bar_SDM10.img_i72
+[type=file gid=0 uid=0 perms=0666 mtime=1503558130 +raw flags=0 phys_align=1M] images/ford1_SDM10.img=images/ford1_SDM10.img_i73
+[type=file gid=0 uid=0 perms=0666 mtime=1503558130 +raw flags=0 phys_align=1M] images/ford2_SDM10.img=images/ford2_SDM10.img_i74
+[type=file gid=0 uid=0 perms=0666 mtime=1503558131 +raw flags=0 phys_align=1M] images/ford3_SDM10.img=images/ford3_SDM10.img_i75
+[type=file gid=0 uid=0 perms=0666 mtime=1503558130 +raw flags=0 phys_align=4K] images/reformat_version.txt=images/reformat_version.txt_i76
+[type=dir gid=0 uid=0 dperms=0755 mtime=0] etc/firmware
+[type=file gid=0 uid=0 perms=0644 mtime=1503558131 +raw flags=0 phys_align=4K] etc/firmware/cpld.jpf=etc/firmware/cpld.jpf_i78
+[type=file gid=0 uid=0 perms=0644 mtime=1503558131 +raw flags=0 phys_align=4K] etc/firmware/cpld_MY18_5.jpf=etc/firmware/cpld_MY18_5.jpf_i79
+[type=dir gid=0 uid=0 dperms=0755 mtime=0] etc/security
+[type=file gid=0 uid=0 perms=0644 mtime=1503558136 +raw flags=0 phys_align=4K] etc/security/ford_cert.pem=etc/security/ford_cert.pem_i81
+[type=file gid=0 uid=0 perms=0644 mtime=1503558128 +raw flags=0 phys_align=4K] etc/enum-usb.conf=etc/enum-usb.conf_i82
+[type=dir gid=0 uid=0 dperms=0755 mtime=0] etc/system
+[type=dir gid=0 uid=0 dperms=0755 mtime=0] etc/system/enum
+[type=file gid=0 uid=0 perms=0644 mtime=1503558128 +raw flags=0 phys_align=4K] etc/system/enum/common=etc/system/enum/common_i85
+[type=dir gid=0 uid=0 dperms=0755 mtime=0] etc/system/enum/include
+[type=file gid=0 uid=0 perms=0644 mtime=1503558128 +raw flags=0 phys_align=4K] etc/system/enum/include/usb-class=etc/system/enum/include/usb-class_i87
+[type=dir gid=0 uid=0 dperms=0755 mtime=0] etc/system/enum/devices
+[type=file gid=0 uid=0 perms=0644 mtime=1503558128 +raw flags=0 phys_align=64K] etc/system/enum/devices/media=etc/system/enum/devices/media_i89
+[type=dir gid=0 uid=0 dperms=0755 mtime=0] etc/system/enum/devices/usb
+[type=file gid=0 uid=0 perms=0644 mtime=1503558128 +raw flags=0 phys_align=4K] etc/system/enum/devices/usb/mass=etc/system/enum/devices/usb/mass_i91
+[type=file gid=0 uid=0 perms=01777 mtime=1503558193 +raw flags=16 phys_align=64K] proc/boot/devb-sdmmc-omap5evm=proc/boot/devb-sdmmc-omap5evm_i2147483740
+[type=file gid=0 uid=0 perms=01777 mtime=1503554354 +raw flags=16 phys_align=4K] proc/boot/usb=proc/boot/usb_i2147483741
+[type=file gid=0 uid=0 perms=01777 mtime=1503554354 +raw flags=16 phys_align=4K] proc/boot/devb-umass=proc/boot/devb-umass_i2147483742
+[type=file gid=0 uid=0 perms=01777 mtime=1503554354 +raw flags=16 phys_align=64K] proc/boot/io-usb=proc/boot/io-usb_i2147483743
+[type=file gid=0 uid=0 perms=01777 mtime=1503554354 +raw flags=16 phys_align=64K] proc/boot/enum-devices=proc/boot/enum-devices_i2147483744
+[type=file gid=0 uid=0 perms=01777 mtime=1503554354 +raw flags=16 phys_align=4K] proc/boot/enum-usb=proc/boot/enum-usb_i2147483745
+[type=file gid=0 uid=0 perms=01777 mtime=1503558238 +raw flags=16 phys_align=4K] proc/boot/i2c-omap35xx-omap4=proc/boot/i2c-omap35xx-omap4_i2147483746
+[type=link gid=0 uid=0 perms=01777 mtime=1503558360 flags=0] var/log=/tmp
+[type=link gid=0 uid=0 perms=01777 mtime=1503558360 flags=0] var/run=/tmp
+[type=link gid=0 uid=0 perms=01777 mtime=1503558360 flags=0] var/lock=/tmp
+[type=file gid=0 uid=0 perms=0666 mtime=1503558360 +raw flags=0 phys_align=4K] etc/mcd.conf=etc/mcd.conf_i102
+[type=file gid=0 uid=0 perms=0666 mtime=1503558128 +raw flags=0 phys_align=4K] etc/mcd.mnt=etc/mcd.mnt_i103
+[type=file gid=0 uid=0 perms=0666 mtime=1503558360 +raw flags=0 phys_align=4K] etc/passwd=etc/passwd_i104
+[type=file gid=0 uid=0 perms=0666 mtime=1503558360 +raw flags=0 phys_align=4K] etc/shadow=etc/shadow_i105
+[type=file gid=0 uid=0 perms=0666 mtime=1503554348 +raw flags=0 phys_align=4K] etc/group=etc/group_i106
+[type=file gid=0 uid=0 perms=0666 mtime=1503554348 +raw flags=0 phys_align=4K] etc/hosts=etc/hosts_i107
+[type=file gid=0 uid=0 perms=0666 mtime=1503554348 +raw flags=0 phys_align=4K] etc/services=etc/services_i108
+[type=file gid=0 uid=0 perms=0666 mtime=1503554348 +raw flags=0 phys_align=4K] etc/motd=etc/motd_i109
+[type=file gid=0 uid=0 perms=0666 mtime=1503558360 +raw flags=0 phys_align=64K] etc/esh=etc/esh_i110
+[type=file gid=0 uid=0 perms=0666 mtime=1503558360 +raw flags=0 phys_align=64K] root/.profile=root/.profile_i111
+[type=file gid=0 uid=0 perms=0666 mtime=1503558360 +raw flags=0 phys_align=4K] etc/update_cpld.sh=etc/update_cpld.sh_i112
+[type=file gid=0 uid=0 perms=0666 mtime=1503558360 +raw flags=0 phys_align=4K] etc/launch_emmcdriver.sh=etc/launch_emmcdriver.sh_i113
+[type=file gid=0 uid=0 perms=01777 mtime=1503558200 +raw flags=16 phys_align=64K] proc/boot/devc-seromap=proc/boot/devc-seromap_i2147483762
+[type=file gid=0 uid=0 perms=01777 mtime=1503554354 +raw flags=16 phys_align=64K] proc/boot/devc-pty=proc/boot/devc-pty_i2147483763
+[type=file gid=0 uid=0 perms=01777 mtime=1503558322 +raw flags=16 phys_align=4K] proc/boot/cpld=proc/boot/cpld_i2147483764
+[type=file gid=0 uid=0 perms=01777 mtime=1503558332 +raw flags=16 phys_align=4K] proc/boot/mmc_get_act=proc/boot/mmc_get_act_i2147483765
+[type=file gid=0 uid=0 perms=01777 mtime=1503558331 +raw flags=16 phys_align=4K] proc/boot/mmc_change_active=proc/boot/mmc_change_active_i2147483766
+[type=file gid=0 uid=0 perms=01777 mtime=1503558334 +raw flags=16 phys_align=4K] proc/boot/mmc_sleep=proc/boot/mmc_sleep_i2147483767
+[type=file gid=0 uid=0 perms=01777 mtime=1503558356 +raw flags=16 phys_align=4K] proc/boot/update_part=proc/boot/update_part_i2147483768
+[type=file gid=0 uid=0 perms=01777 mtime=1503558352 +raw flags=16 phys_align=4K] proc/boot/update_boot=proc/boot/update_boot_i2147483769
+[type=file gid=0 uid=0 perms=01777 mtime=1503558354 +raw flags=16 phys_align=4K] proc/boot/update_images=proc/boot/update_images_i2147483770
+[type=file gid=0 uid=0 perms=01777 mtime=1503558324 +raw flags=16 phys_align=4K] proc/boot/crc32=proc/boot/crc32_i2147483771
+[type=file gid=0 uid=0 perms=01777 mtime=1503558235 +raw flags=16 phys_align=4K] proc/boot/disp_rsrmgr=proc/boot/disp_rsrmgr_i2147483772
+[type=file gid=0 uid=0 perms=01777 mtime=1503558185 +raw flags=16 phys_align=64K] proc/boot/dev-cpld=proc/boot/dev-cpld_i2147483773
+[type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=4K] proc/boot/cat=proc/boot/cat_i2147483774
+[type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=4K] proc/boot/chmod=proc/boot/chmod_i2147483775
+[type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=4K] proc/boot/cp=proc/boot/cp_i2147483776
+[type=file gid=0 uid=0 perms=01777 mtime=1503554372 +raw flags=16 phys_align=4K] proc/boot/date=proc/boot/date_i2147483777
+[type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=4K] proc/boot/echo=proc/boot/echo_i2147483778
+[type=file gid=0 uid=0 perms=01777 mtime=1503554372 +raw flags=16 phys_align=4K] proc/boot/grep=proc/boot/grep_i2147483779
+[type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=1M] proc/boot/ksh=proc/boot/ksh_i2147483780
+[type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=4K] proc/boot/ln=proc/boot/ln_i2147483781
+[type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=4K] proc/boot/ls=proc/boot/ls_i2147483782
+[type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=4K] proc/boot/mkdir=proc/boot/mkdir_i2147483783
+[type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=64K] proc/boot/more=proc/boot/more_i2147483784
+[type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=4K] proc/boot/mount=proc/boot/mount_i2147483785
+[type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=4K] proc/boot/mv=proc/boot/mv_i2147483786
+[type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=4K] proc/boot/on=proc/boot/on_i2147483787
+[type=file gid=0 uid=0 perms=01777 mtime=1503558337 +raw flags=16 phys_align=4K] proc/boot/partition=proc/boot/partition_i2147483788
+[type=file gid=0 uid=0 perms=01777 mtime=1503554354 +raw flags=16 phys_align=4K] proc/boot/pipe=proc/boot/pipe_i2147483789
+[type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=64K] proc/boot/pidin=proc/boot/pidin_i2147483790
+[type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=4K] proc/boot/umount=proc/boot/umount_i2147483791
+[type=file gid=0 uid=0 perms=01777 mtime=1503554372 +raw flags=16 phys_align=4K] proc/boot/use=proc/boot/use_i2147483792
+[type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=4K] proc/boot/rm=proc/boot/rm_i2147483793
+[type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=64K] proc/boot/shutdown=proc/boot/shutdown_i2147483794
+[type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=4K] proc/boot/slay=proc/boot/slay_i2147483795
+[type=file gid=0 uid=0 perms=01777 mtime=1503554372 +raw flags=16 phys_align=4K] proc/boot/sleep=proc/boot/sleep_i2147483796
+[type=file gid=0 uid=0 perms=01777 mtime=1503554373 +raw flags=16 phys_align=4K] proc/boot/slogger=proc/boot/slogger_i2147483797
+[type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=64K] proc/boot/sloginfo=proc/boot/sloginfo_i2147483798
+[type=file gid=0 uid=0 perms=01777 mtime=1503554372 +raw flags=16 phys_align=4K] proc/boot/touch=proc/boot/touch_i2147483799
+[type=file gid=0 uid=0 perms=01777 mtime=1503554372 +raw flags=16 phys_align=4K] proc/boot/tr=proc/boot/tr_i2147483800
+[type=file gid=0 uid=0 perms=01777 mtime=1503554372 +raw flags=16 phys_align=64K] proc/boot/awk=proc/boot/awk_i2147483801
+[type=file gid=0 uid=0 perms=01777 mtime=1503554372 +raw flags=16 phys_align=4K] proc/boot/tee=proc/boot/tee_i2147483802
+[type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=4K] proc/boot/waitfor=proc/boot/waitfor_i2147483803
+[type=file gid=0 uid=0 perms=01777 mtime=1503558120 +raw flags=16 phys_align=64K] proc/boot/fdisk=proc/boot/fdisk_i2147483804
+[type=file gid=0 uid=0 perms=01777 mtime=1503558120 +raw flags=16 phys_align=4K] proc/boot/mkqnx6fs=proc/boot/mkqnx6fs_i2147483805
+[type=file gid=0 uid=0 perms=01777 mtime=1503554372 +raw flags=16 phys_align=64K] proc/boot/tar=proc/boot/tar_i2147483806
+[type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=64K] proc/boot/gzip=proc/boot/gzip_i2147483807
+[type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=4K] proc/boot/sync=proc/boot/sync_i2147483808
+[type=file gid=0 uid=0 perms=01777 mtime=1503558120 +raw flags=16 phys_align=4K] proc/boot/mkdosfs=proc/boot/mkdosfs_i2147483809
+[type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=4K] proc/boot/df=proc/boot/df_i2147483810
+[type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=4K] proc/boot/dd=proc/boot/dd_i2147483811
+[type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=4K] proc/boot/kill=proc/boot/kill_i2147483812
+[type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=4K] proc/boot/mkdir=proc/boot/mkdir_i2147483813
+[type=file gid=0 uid=0 perms=01777 mtime=1503558342 +raw flags=16 phys_align=4K] proc/boot/resource_seed=proc/boot/resource_seed_i2147483814
+[type=file gid=0 uid=0 perms=01777 mtime=1503554354 +raw flags=16 phys_align=4K] proc/boot/mqueue=proc/boot/mqueue_i2147483815
+[type=file gid=0 uid=0 perms=01777 mtime=1503554373 +raw flags=16 phys_align=64K] proc/boot/io-fs-media=proc/boot/io-fs-media_i2147483816
+[type=file gid=0 uid=0 perms=01777 mtime=1503554373 +raw flags=16 phys_align=4K] proc/boot/random=proc/boot/random_i2147483817
+[type=file gid=0 uid=0 perms=0777 mtime=1503558134 +raw flags=80 phys_align=64K] proc/boot/libz.so.2=proc/boot/libz.so.2_i3221225642
+[type=link gid=0 uid=0 perms=0777 mtime=1503558134 flags=80] proc/boot/libz.so=libz.so.2
+[type=file gid=0 uid=0 perms=0777 mtime=1503554373 +raw flags=80 phys_align=64K] proc/boot/libbz2.so.1=proc/boot/libbz2.so.1_i3221225644
+[type=link gid=0 uid=0 perms=0777 mtime=1503554373 flags=80] proc/boot/libbz2.so=libbz2.so.1
+[type=file gid=0 uid=0 perms=0777 mtime=1503554375 +raw flags=80 phys_align=1M] proc/boot/libcrypto.so.2=proc/boot/libcrypto.so.2_i3221225646
+[type=link gid=0 uid=0 perms=0777 mtime=1503554375 flags=80] proc/boot/libcrypto.so=libcrypto.so.2
+[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80 phys_align=1M] proc/boot/libssl.so.2=proc/boot/libssl.so.2_i3221225648
+[type=link gid=0 uid=0 perms=0777 mtime=1503554374 flags=80] proc/boot/libssl.so=libssl.so.2
+[type=file gid=0 uid=0 perms=0777 mtime=1503554355 +raw flags=80 phys_align=64K] proc/boot/libsocket.so.3=proc/boot/libsocket.so.3_i3221225650
+[type=link gid=0 uid=0 perms=0777 mtime=1503554355 flags=80] proc/boot/libsocket.so=libsocket.so.3
+[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80 phys_align=64K] proc/boot/libarchive.so.12=proc/boot/libarchive.so.12_i3221225652
+[type=link gid=0 uid=0 perms=0777 mtime=1503554374 flags=80] proc/boot/libarchive.so=libarchive.so.12
+[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80 phys_align=64K] proc/boot/libiconv.so.1=proc/boot/libiconv.so.1_i3221225654
+[type=link gid=0 uid=0 perms=0777 mtime=1503554374 flags=80] proc/boot/libiconv.so=libiconv.so.1
+[type=dir gid=0 uid=0 dperms=0755 mtime=0] etc
+[type=dir gid=0 uid=0 dperms=0755 mtime=0] var
+[type=link gid=0 uid=0 perms=01777 mtime=1503558361 flags=0] var/lock=E:/buildB/com.pas.for.gofast/SS_BSP/../SS_BSP/tmp
+[type=link gid=0 uid=0 perms=01777 mtime=1503558361 flags=0] var/log=E:/buildB/com.pas.for.gofast/SS_BSP/../SS_BSP/tmp
+[type=link gid=0 uid=0 perms=01777 mtime=1503558361 flags=0] var/run=E:/buildB/com.pas.for.gofast/SS_BSP/../SS_BSP/tmp
+[type=link gid=0 uid=0 perms=01777 mtime=1503558361 flags=0] var/tmp=E:/buildB/com.pas.for.gofast/SS_BSP/../SS_BSP/tmp
+[type=dir gid=0 uid=0 dperms=0755 mtime=0] usr
+[type=file gid=0 uid=0 perms=01755 mtime=1503558120 +raw flags=0 phys_align=64K] usr/sbin/update_radio.sh=usr/sbin/update_radio.sh_i191
+[type=file gid=0 uid=0 perms=01755 mtime=1503558136 +raw flags=16 phys_align=64K] usr/sbin/SS_PowerManager=usr/sbin/SS_PowerManager_i2147483840
+[type=file gid=0 uid=0 perms=01755 mtime=1503558136 +raw flags=16 phys_align=64K] usr/sbin/SS_SCM_IPC=usr/sbin/SS_SCM_IPC_i2147483841
+[type=file gid=0 uid=0 perms=01755 mtime=1503558136 +raw flags=16 phys_align=4K] usr/sbin/NS_ExtractVerify=usr/sbin/NS_ExtractVerify_i2147483842
+[type=file gid=0 uid=0 perms=01755 mtime=1503558329 +raw flags=16 phys_align=4K] usr/sbin/hwid=usr/sbin/hwid_i2147483843
+[type=file gid=0 uid=0 perms=01755 mtime=1503554354 +raw flags=16 phys_align=4K] usr/sbin/mqueue=usr/sbin/mqueue_i2147483844
+[type=file gid=0 uid=0 perms=01755 mtime=1503558133 +raw flags=16 phys_align=64K] usr/sbin/screen=usr/sbin/screen_i2147483845
+[type=file gid=0 uid=0 perms=01755 mtime=1503558327 +raw flags=16 phys_align=4K] usr/sbin/dispmon=usr/sbin/dispmon_i2147483846
+[type=file gid=0 uid=0 perms=01755 mtime=1503558339 +raw flags=16 phys_align=4K] usr/sbin/read_lst=usr/sbin/read_lst_i2147483847
+[type=file gid=0 uid=0 perms=01755 mtime=1503554373 +raw flags=16 phys_align=4K] usr/sbin/mcd=usr/sbin/mcd_i2147483848
+[type=file gid=0 uid=0 perms=01755 mtime=1503554373 +raw flags=16 phys_align=64K] usr/sbin/openssl=usr/sbin/openssl_i2147483849
+[type=file gid=0 uid=0 perms=01755 mtime=1503558124 +raw flags=16 phys_align=4K] usr/sbin/setdps=usr/sbin/setdps_i2147483850
+[type=dir gid=0 uid=0 dperms=0755 mtime=0] lib
+[type=file gid=0 uid=0 perms=0755 mtime=1503558136 +raw flags=80 phys_align=64K] lib/libcpp.so.4=lib/libcpp.so.4_i3221225676
+[type=link gid=0 uid=0 perms=0755 mtime=1503558136 flags=80] lib/libcpp.so=libcpp.so.4
+[type=file gid=0 uid=0 perms=0755 mtime=1503554355 +raw flags=80 phys_align=64K] lib/libcpp-ne.so.4=lib/libcpp-ne.so.4_i3221225678
+[type=link gid=0 uid=0 perms=0755 mtime=1503554355 flags=80] lib/libcpp-ne.so=libcpp-ne.so.4

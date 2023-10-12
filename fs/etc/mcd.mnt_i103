@@ -1,0 +1,30 @@
+#----------------------------------------------------------------------
+# Device							Mountpt		Type	Options
+#----------------------------------------------------------------------
+/dev/umass[0-9]*					/			enum
+/dev/umass[0-9]*t1[124]				/fs/usb%0	dos		fsi=use,sfn=windows,codepage=cp850
+/dev/umass[0-9]*t1[124].[0-9]*		/fs/usb%0	dos		fsi=use,sfn=windows
+/dev/umass[0-9]*t[146]				/fs/usb%0	dos		fsi=use,sfn=windows
+/dev/umass[0-9]*t[146].[0-9]*		/fs/usb%0	dos		fsi=use,sfn=windows
+/dev/umass[0-9]*t7[789]				/fs/usb%0	qnx4
+/dev/umass[0-9]*t17[789]			/fs/usb%0	qnx6	sync=optional
+/dev/umass[0-9]						/fs/usb%0	dos		fsi=use,sfn=windows
+/dev/umass[0-9]						/fs/usb%0	nt		normv
+/dev/umass[0-9]						/fs/usb%0	exfat	normv,hotplug
+/dev/umass[0-9]*t7*					/fs/usb%0	nt		normv
+/dev/umass[0-9]*t7*					/fs/usb%0	exfat	normv,hotplug
+/dev/umass[0-9].hfs.????????-????-????-????-????????????                        /fs/usb%0       mac             normv,ro
+/dev/umass[0-9]*					/fs/usb%0	ext2	normv
+#---------------------------SD Card umass------------------------------
+/dev/umasssd[0-9]*					/			enum
+/dev/umasssd[0-9]*t1[124]			/fs/sd%0	dos		fsi=use,sfn=windows
+/dev/umasssd[0-9]*t1[124].[0-9]*	/fs/sd%0	dos		fsi=use,sfn=windows
+/dev/umasssd[0-9]*t[146]			/fs/sd%0	dos		fsi=use,sfn=windows
+/dev/umasssd[0-9]*t[146].[0-9]*		/fs/sd%0	dos		fsi=use,sfn=windows
+/dev/umasssd[0-9]*t7[789]			/fs/sd%0	qnx4
+/dev/umasssd[0-9]*t17[789]			/fs/sd%0	qnx6	sync=optional
+/dev/umasssd[0-9]*					/fs/sd%0	dos		fsi=use,sfn=windows
+/dev/umasssd[0-9]*t7				/fs/sd%0	nt
+/dev/umasssd[0-9]*t7				/fs/sd%0	exfat	hotplug
+#---------------------------CD----------------------------------------
+/dev/cd*							/fs/cd%#	udf		normv

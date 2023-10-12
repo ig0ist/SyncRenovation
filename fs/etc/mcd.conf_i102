@@ -1,0 +1,42 @@
+
+[/dev/umass*]
+Callout		= PATH_MEDIA_PROCMGR
+Argument	= /proc/mount
+Priority	= 11,10
+Start Rule	= MOUNT
+Stop Rule	= UNMOUNT
+
+[MOUNT]
+Callout		= MOUNT_FSYS
+Argument	= /etc/mcd.mnt
+
+[UNMOUNT]
+Callout		= UNMOUNT_FSYS
+
+[/fs/usb*]
+Callout		= PATH_MEDIA_PROCMGR
+Argument	= /proc/mount
+Priority	= 11,10
+Start Rule	= INSERTED
+Stop Rule	= EJECTED
+
+[/fs/ipod*]
+Callout		= PATH_MEDIA_PROCMGR
+Argument	= /proc/mount
+Priority	= 11,10
+Start Rule	= INSERTED
+Stop Rule	= EJECTED
+
+[/fs/pfs*]
+Callout		= PATH_MEDIA_PROCMGR
+Argument	= /proc/mount
+Priority	= 11,10
+Start Rule	= INSERTED
+Stop Rule	= EJECTED
+
+[INSERTED]
+
+[EJECTED]
+
+[AVAILABLE]
+
