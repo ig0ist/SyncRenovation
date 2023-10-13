@@ -46,6 +46,7 @@ Build
 ToDo
 -----
 
+- [ ] Editor / convert `/proc/boot/.script` 
 - [ ] Write tool update `buildfile.bld`
 - [ ] Support USB-Lan
 - [ ] SSH Server 
