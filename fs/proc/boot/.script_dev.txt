@@ -1,4 +1,3 @@
-gid=0 uid=0 mode=0666 mtime=599e7ae2 ino=00000003
 procmgr_symlink '../../proc/boot/libc.so.3' '/usr/lib/ldqnx.so.2'
 display_msg ''
 display_msg 'Welcome to QNX Neutrino 6.5.0 SP1 on Texas Instruments OMAP5432 Pasa Ford sync3 (ARMv7 Cortex-A15 core)'
@@ -38,7 +37,6 @@ PATH=:/proc/boot:/bin:/usr/bin:/sbin:/usr/sbin enum-usb &
 PATH=/proc/boot:/bin:/usr/bin:/sbin:/usr/sbin SHELL=/bin/sh SYSNAME=nto TERM=qansi HOME=/ QQNX_PHYSICAL_SCREEN_SIZE=600,400 CPUROOT=/fs TMPDIR=/tmp LD_LIBRARY_PATH=/proc/boot:/lib:/usr/lib:/lib/dll GRAPHICS_ROOT=/usr/lib/graphics/omap5430ES2_0 SS_SCM_IPC &
 waitfor 5.0 /dev/mqueue/IPC_MID
 PATH=/proc/boot:/bin:/usr/bin:/sbin:/usr/sbin SHELL=/bin/sh SYSNAME=nto TERM=qansi HOME=/ QQNX_PHYSICAL_SCREEN_SIZE=600,400 CPUROOT=/fs TMPDIR=/tmp LD_LIBRARY_PATH=/proc/boot:/lib:/usr/lib:/lib/dll GRAPHICS_ROOT=/usr/lib/graphics/omap5430ES2_0 SS_PowerManager &
-[---]
 PATH=/proc/boot:/bin:/usr/bin:/sbin:/usr/sbin SHELL=/bin/sh SYSNAME=nto TERM=qansi HOME=/ QQNX_PHYSICAL_SCREEN_SIZE=600,400 CPUROOT=/fs TMPDIR=/tmp LD_LIBRARY_PATH=/proc/boot:/lib:/usr/lib:/lib/dll GRAPHICS_ROOT=/usr/lib/graphics/omap5430ES2_0 sleep 1
 PATH=/proc/boot:/bin:/usr/bin:/sbin:/usr/sbin SHELL=/bin/sh SYSNAME=nto TERM=qansi HOME=/ QQNX_PHYSICAL_SCREEN_SIZE=600,400 CPUROOT=/fs TMPDIR=/tmp LD_LIBRARY_PATH=/proc/boot:/lib:/usr/lib:/lib/dll GRAPHICS_ROOT=/usr/lib/graphics/omap5430ES2_0 io-fs-media -v -dtmp,mount=/fs/tmpfs
 PATH=/proc/boot:/bin:/usr/bin:/sbin:/usr/sbin SHELL=/bin/sh SYSNAME=nto TERM=qansi HOME=/ QQNX_PHYSICAL_SCREEN_SIZE=600,400 CPUROOT=/fs TMPDIR=/tmp LD_LIBRARY_PATH=/proc/boot:/lib:/usr/lib:/lib/dll GRAPHICS_ROOT=/usr/lib/graphics/omap5430ES2_0 touch /fs/tmpfs/status
