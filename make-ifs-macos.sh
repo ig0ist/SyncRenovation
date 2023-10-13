@@ -7,4 +7,4 @@ cd "$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 MKIFS_PATH=./fs/ ./tools/mkifs-macos -t ifs ./buildfile.bld $d
 
 
-./tools/dumpifs-macos -vv $d
+#./tools/dumpifs-macos -vv $d

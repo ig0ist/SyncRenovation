@@ -440,11 +440,11 @@ fi
 
 
 echo "Searching for USB stick..." > $LOG_FILE
-echo "Hi, @bigunclemax ..." > $DISPLAY
+echo "Searching for USB stick..." > $DISPLAY
 
 while ! [ -e /fs/usb0 ] ; do
 	echo "Please insert USB stick..." > $LOG_FILE
-	echo "Hi @bigunclemax & FMods ..." > $DISPLAY
+	echo "Please insert USB stick..." > $DISPLAY
 	waitfor /fs/usb0	
 done
 

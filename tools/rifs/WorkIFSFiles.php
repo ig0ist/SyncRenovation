@@ -25,23 +25,40 @@ class WorkIFSFile extends DGBase
         }
         $this->buildfile = $buildfile;
     }
-
-    public function scanDir($path,$regexp=null):array
-    {
-        return [];
-    }
-
     public function display_script()
     {
 
     }
-    public function dumpScriptFile():void
+
+    public function scanDir(string $dir,string $regExp='/.*/i'):array
+    {
+        $a = new \RecursiveRegexIterator( new \RecursiveDirectoryIterator( $dir ), $regExp, \RecursiveRegexIterator::ALL_MATCHES );
+        $out=array();
+        foreach( new \RecursiveIteratorIterator( $a ) as $s )
+        {
+            $ff=@$s[0][0];
+            if (is_file($ff) && filesize($ff)>2 && is_readable($ff))
+            {
+                $name=str_ireplace($dir,'',$ff);
+                $name=preg_replace('/\_i\d{1,}/ius','',$name);
+                $out[$name]=$ff;
+            }
+        }
+        asort($out);
+        return $out;
+    }
+    public function compareDir(string $dir):void
     {
         //todo read in bld find +script
-        $script = $this->fsDir.'/proc/boot/.script_i3';
         $this->lineMsg(1);
-        if (!is_file($script)) $this->error("Not find :".$script);
+        //        if (!is_file($script)) $this->error("Not find :".$script);
+        //
+        $listDest = $this->scanDir($dir);
+        $fsDest = $this->scanDir($this->fsDir);
 
+        $r=array_diff(array_keys($listDest),array_keys($fsDest));
+
+        print_r($r);
 
 
 

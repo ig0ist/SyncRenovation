@@ -20,4 +20,4 @@ $n=new \rifs\WorkIFSFile(
     $opt['buildfile']??'',
 
 );
-$n->dumpScriptFile();
+$n->compareDir('/Users/igor/sites/SyncReformatDev/');
