@@ -46,9 +46,9 @@ Build
 ToDo
 -----
 
-- [ ] Editor / convert `/proc/boot/.script` 
-- [ ] Write tool update `buildfile.bld`
-- [ ] Support USB-Lan
+- [X] Editor / convert `/proc/boot/.script` - move to Txt  
+- [X] Write tool update `buildfile.bld` - use manual, not need automation 
+- [X] Support USB-Lan
 - [ ] SSH Server 
 - [ ] Support MY20 new Display 
 - [ ] Support new EMMC
@@ -60,3 +60,21 @@ ToDo
 - [ ] install before finish boot
 - [ ] install before run `update_radio.sh`
 - [ ] install after all install in `update_radio.sh`
+
+
+## LanUSB
+
+Default IP: `192.168.1.26`
+
+* Support: Chip ASIX AX88772C, support by  QNX
+* Vendor : 0x0b95 (ASIX Elec. Corp.)
+* Product : 0x772b (AX88772C)
+
+
+# Changelog
+
+### 2023-10-13 
+
+* Init release with QNX-REFORMAT-DEV
+* Support telnet & qconn
+* Support USB-LAN 
