@@ -1,4 +1,10 @@
 #!/bin/bash
-d=$(date +%Y-%m-%d-%H%M)
+d=./repacked-$(date +%Y-%m-%d-%H%M).ifs
+
+echo "FILE: $d"
+
 cd "$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-MKIFS_PATH=./fs/ ./tools/mkifs-macos -t ifs ./buildfile.bld ./repacked-$d.ifs
+MKIFS_PATH=./fs/ ./tools/mkifs-macos -t ifs ./buildfile.bld $d
+
+
+./tools/dumpifs-macos -vv $d
