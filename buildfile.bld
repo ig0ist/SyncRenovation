@@ -224,3 +224,7 @@
 [type=link gid=0 uid=0 perms=0755 mtime=1503558136 flags=80] lib/libcpp.so=libcpp.so.4
 [type=file gid=0 uid=0 perms=0755 mtime=1503554355 +raw flags=80 phys_align=64K] lib/libcpp-ne.so.4=lib/libcpp-ne.so.4
 [type=link gid=0 uid=0 perms=0755 mtime=1503554355 flags=80] lib/libcpp-ne.so=libcpp-ne.so.4
+# Path 1
+[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80 phys_align=4K] usr/lib/libGLESv1_CL.so.1=usr/lib/libGLESv1_CL.so.1
+[type=link gid=0 uid=0 perms=0777 mtime=1503554374 flags=80] usr/lib/libGLESv1_CL.so=libGLESv1_CL.so.1
+[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80 phys_align=4K] usr/lib/libGLESv2.so=usr/lib/libGLESv2.so
