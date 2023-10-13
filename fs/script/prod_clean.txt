@@ -1,0 +1,71 @@
+reopen /dev/null
+procmgr_symlink '../../proc/boot/libc.so.3' '/usr/lib/ldqnx.so.2'
+slogger -f 0 -s 5120 -v
+sh /etc/launch_emmcdriver.sh
+devc-seromap -v -F -t8 -T8 -O4096 -u2 -I4096 -b500000 -c48000000/16 0x4806a000^2,104 &
+waitfor /dev/ser2
+pipe &
+resource_seed dma=0,31
+sh /etc/configure_console.sh
+waitfor /dev/console
+reopen /dev/console
+i2c-omap35xx-omap4 -p 0x48070000 -i 88 --u0
+waitfor /dev/i2c0
+i2c-omap35xx-omap4 -p 0x48072000 -i 89 --u1
+waitfor /dev/i2c1
+i2c-omap35xx-omap4 -p 0x48060000 -i 93 --u2
+waitfor /dev/i2c2
+i2c-omap35xx-omap4 -p 0x4807a000 -i 94 --u3 --b 50000
+waitfor /dev/i2c3
+i2c-omap35xx-omap4 -p 0x4807c000 -i 92 --u4
+waitfor /dev/i2c4
+waitfor /dev/hd0t180
+mount -b -t qnx6 -o noatime,alignio /dev/hd0t180 /fs/images &
+pps &
+mq &
+dev-cpld &
+sh /etc/script_mnt.sh
+waitfor /dev/cpld
+sh /etc/update_cpld.sh
+cpld fifo_dump /tmp/fifo_dump1 &
+cpld display on &
+waitfor /dev/hd0t181
+mount -b -t qnx6 -o alignio /dev/hd0t181 /fs/rwdata &
+mount_ifs -b -f /fs/mp/ifs/renderer-ifs -m / &
+waitfor /bin/ipc
+tiler &
+mount_ifs -b -f /fs/mp/ifs/quickapps-ifs -m / &
+mount_ifs -b -f /fs/mp/ifs/second-ifs -m / &
+waitfor /fs/rwdata
+mkdir -p /fs/rwdata/dumps/tmp
+/fs/mp/usr/sbin/dumper -d /fs/rwdata/dumps/tmp -I -E 40 -s 10M -n -z 1 &
+on -p 15 disp_rsrmgr &
+waitfor /tmp/DM_detection_ntfy 7
+waitfor /dev/tiler
+screen &
+waitfor /dev/mq
+boot_metrics_server &
+boot_metrics_client add foreground pasa-ford-sync3 build file:START
+waitfor /etc/scripts
+sh /etc/scripts/launch_quickrvc.sh &
+sh /etc/scripts/launch_ComPackage.sh &
+sh /etc/scripts/launch_nav_mini_app.sh &
+waitfor /sbin/xhci_port_test-omap5
+sleep 0.5
+cpld usb on &
+cpld vadc on &
+cpld wilink off
+devc-seromap_hci-pasa -t60 -T56 -u5 -a -b115200 -c 48000000/16 -g 0x4805b000,142 0x48066000^2,137 &
+on -p 50 io-audio -vv -d mcbsp-omap4 mcbsp=1,protocol=i2s,xrate=16000,rrate=16000,sample_size=16,mclk=12288000,xclk_pol=1,rclk_pol=0
+waitfor /dev/snd/pcmC0D1p
+on -p 50 io-audio -vv -osw_mixer_samples=1536 -d mcbsp-omap4 mcbsp=3,protocol=i2s,xrate=48000,sample_size=16,mclk=12288000,pp_connect
+waitfor /dev/snd/pcmC1D1p
+on -p 50 io-audio -vv -d mcbsp-omap4 mcbsp=2,protocol=i2s,xrate=48000,rrate=48000,sample_size=16,mclk=12288000,pp_connect,xclk_mode=0,rclk_mode=0
+waitfor /dev/snd/pcmC2D1p
+cpld codec on &
+waitfor /fs/images
+sh /etc/mount_all_images.sh
+random -p &
+sh /fs/mp/scripts/startup_gf.sh &
+boot_metrics_client add foreground pasa-ford-sync3 build file:END
+

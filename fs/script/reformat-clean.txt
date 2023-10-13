@@ -1,0 +1,65 @@
+procmgr_symlink ../../proc/boot/libc.so.3 /usr/lib/ldqnx.so.2
+display_msg
+display_msg Welcome to QNX Neutrino 6.5.0 SP1 on Texas Instruments OMAP5432 Pasa Ford sync3 (ARMv7 Cortex-A15 core)
+display_msg
+display_msg Starting UART3 (Console)
+devc-seromap -e -F -b115200 -c48000000/16 0x48020000^2,106 -u1 &
+waitfor /dev/ser1
+reopen /dev/ser1
+display_msg Starting UART1 (IPC)
+devc-seromap -v -F -O4096 -I4096 -b500000 -c48000000/16 0x4806a000^2,104 -u2 &
+waitfor /dev/ser2
+slogger &
+pipe &
+mqueue &
+resource_seed dma=0,31
+sh /etc/launch_emmcdriver.sh
+display_msg Starting I2C driver...
+i2c-omap35xx-omap4 -p 0x48070000 -i 88 --u0 &
+waitfor /dev/i2c0
+i2c-omap35xx-omap4 -p 0x48072000 -i 89 --u1 &
+waitfor /dev/i2c1
+i2c-omap35xx-omap4 -p 0x48060000 -i 93 --u2 &
+waitfor /dev/i2c2
+i2c-omap35xx-omap4 -p 0x4807a000 -i 94 --u3 &
+waitfor /dev/i2c3
+i2c-omap35xx-omap4 -p 0x4807c000 -i 92 --u4 &
+waitfor /dev/i2c4
+sh /etc/update_cpld.sh
+cpld vadc on
+cpld usb on
+display_msg Starting USB driver...
+io-usb -vvv -duevm5432-ehci-omap3 ioport=0x4a064c00,irq=109 -d sevm-omap5-xhci ioport=0x4a030000,irq=124
+waitfor /dev/io-usb/io-usb 4
+sleep 1
+enum-devices -c/etc/system/enum/common &
+enum-usb &
+SS_SCM_IPC &
+waitfor /dev/mqueue/IPC_MID
+SS_PowerManager &
+sleep 1
+io-fs-media -v -dtmp,mount=/fs/tmpfs
+touch /fs/tmpfs/status
+dev-cpld &
+cpld display on
+waitfor /dev/cpld
+disp_rsrmgr -reformatter_mode &
+waitfor /tmp/DM_detection_ntfy
+/usr/sbin/screen &
+waitfor /dev/screen
+sleep 1
+/usr/sbin/dispmon /fs/tmpfs/status &
+/usr/sbin/mcd /etc/mcd.conf
+devc-pty &
+sh /usr/sbin/update_radio.sh &
+sleep 40
+display_msg Starting Ethernet driver...
+io-pkt-v6-hc -d /proc/boot/devnp-asix.so -ptcpip -v
+waitfor /dev/socket
+sleep 5
+display_msg Configuring Ethernet Interface...
+if_up -s 10 -p ax0
+ifconfig ax0 192.168.1.26 netmask 255.255.255.0 up
+inetd &
+qconn &
+[ +session ] sh &
