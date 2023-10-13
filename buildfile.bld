@@ -4,9 +4,9 @@
 [prefix=""]
 [mount="/"]
 [type=file gid=0 uid=0 perms=0666 mtime=1503558359  flags=0 phys_align=4K +script] proc/boot/.script=script/_script.txt
-[type=link gid=0 uid=0 perms=01777 mtime=1503558359 flags=0] bin/sh=/proc/boot/ksh
-[type=link gid=0 uid=0 perms=01777 mtime=1503558359 flags=0] dev/console=/dev/ser1
-[type=link gid=0 uid=0 perms=01777 mtime=1503558359 flags=0] tmp=/dev/shmem
+[type=link gid=0 uid=0 perms=01777 mtime=1503558370 flags=0] bin/sh=/proc/boot/ksh
+[type=link gid=0 uid=0 perms=01777 mtime=1503558370 flags=0] dev/console=/dev/ser1
+[type=link gid=0 uid=0 perms=01777 mtime=1503558370 flags=0] tmp=/dev/shmem
 [type=dir gid=0 uid=0 dperms=0777 mtime=0] fs
 [type=file gid=0 uid=0 perms=0777 mtime=1503558125 +raw flags=80 phys_align=64K] proc/boot/libc.so.3=proc/boot/libc.so.3
 [type=link gid=0 uid=0 perms=0777 mtime=1503558125 flags=80] proc/boot/libc.so=libc.so.3
@@ -24,14 +24,13 @@
 [type=link gid=0 uid=0 perms=0777 mtime=1503554355 flags=80] proc/boot/libusbdi.so=libusbdi.so.2
 [type=file gid=0 uid=0 perms=0777 mtime=1503558127 +raw flags=80 phys_align=64K] proc/boot/devu-uevm5432-ehci-omap3.so=proc/boot/devu-uevm5432-ehci-omap3.so
 [type=file gid=0 uid=0 perms=0777 mtime=1503558127 +raw flags=80 phys_align=4K] proc/boot/devu-sevm-omap5-xhci.so=proc/boot/devu-sevm-omap5-xhci.so
-# [type=file gid=0 uid=0 perms=0777 mtime=1503558128 +raw flags=80 phys_align=64K] proc/boot/devnp-asix.so=proc/boot/devnp-asix.so
-# [type=file gid=0 uid=0 perms=0777 mtime=1503558128 +raw flags=80 phys_align=64K] proc/boot/devnp-shim.so=proc/boot/devnp-shim.so
-# [type=file gid=0 uid=0 perms=0777 mtime=1503554355 +raw flags=80 phys_align=64K] proc/boot/libsocket.so=proc/boot/libsocket.so
-# [type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80 phys_align=64K] proc/boot/libnbutil.so.1=proc/boot/libnbutil.so.1
-# [type=link gid=0 uid=0 perms=0777 mtime=1503554374 flags=80] proc/boot/libnbutil.so=libnbutil.so.1
-# [type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80 phys_align=4K] proc/boot/libbacktrace.so.1=proc/boot/libbacktrace.so.1
-# [type=link gid=0 uid=0 perms=0777 mtime=1503554374 flags=80] proc/boot/libbacktrace.so=libbacktrace.so.1
-
+[type=file gid=0 uid=0 perms=0777 mtime=1503558128 +raw flags=80 phys_align=4K] proc/boot/devnp-asix.so=proc/boot/devnp-asix.so
+[type=file gid=0 uid=0 perms=0777 mtime=1503558128 +raw flags=80 phys_align=4K] proc/boot/devnp-shim.so=proc/boot/devnp-shim.so
+[type=file gid=0 uid=0 perms=0777 mtime=1503554355 +raw flags=80 phys_align=64K] proc/boot/libsocket.so=proc/boot/libsocket.so
+[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80 phys_align=4K] proc/boot/libnbutil.so.1=proc/boot/libnbutil.so.1
+[type=link gid=0 uid=0 perms=0777 mtime=1503554374 flags=80] proc/boot/libnbutil.so=libnbutil.so.1
+[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80 phys_align=4K] proc/boot/libbacktrace.so.1=proc/boot/libbacktrace.so.1
+[type=link gid=0 uid=0 perms=0777 mtime=1503554374 flags=80] proc/boot/libbacktrace.so=libbacktrace.so.1
 [type=file gid=0 uid=0 perms=0777 mtime=1503558136 +raw flags=80 phys_align=4K] lib/libhiddi.so.1=lib/libhiddi.so.1
 [type=link gid=0 uid=0 perms=0777 mtime=1503558136 flags=80] lib/libhiddi.so=libhiddi.so.1
 [type=file gid=0 uid=0 perms=0777 mtime=1503554355 +raw flags=80 phys_align=4K] lib/libpps.so.1=lib/libpps.so.1
@@ -49,7 +48,7 @@
 [type=file gid=0 uid=0 perms=0777 mtime=1503558183 +raw flags=80 phys_align=4K] usr/lib/libwfdcfg.so.0=usr/lib/libwfdcfg.so.0
 [type=link gid=0 uid=0 perms=0777 mtime=1503558183 flags=80] usr/lib/libwfdcfg-sync3.so=libwfdcfg.so.0
 [type=file gid=0 uid=0 perms=0644 mtime=1503558135 +raw flags=0 phys_align=4K] usr/lib/graphics/omap5430ES2_0/graphics.conf=usr/lib/graphics/omap5430ES2_0/graphics.conf
-[type=file gid=0 uid=0 perms=0777 mtime=1503558135 +raw flags=80 phys_align=1M] usr/lib/graphics/omap5430ES2_0/libWFDomap5430ES2_0.so=usr/lib/graphics/omap5430ES2_0/libWFDomap5430ES2_0.so
+[type=file gid=0 uid=0 perms=0777 mtime=1503558135 +raw flags=80 phys_align=64K] usr/lib/graphics/omap5430ES2_0/libWFDomap5430ES2_0.so=usr/lib/graphics/omap5430ES2_0/libWFDomap5430ES2_0.so
 [type=file gid=0 uid=0 perms=0777 mtime=1503558135 +raw flags=80 phys_align=64K] usr/lib/graphics/omap5430ES2_0/libsrv_um.so=usr/lib/graphics/omap5430ES2_0/libsrv_um.so
 [type=file gid=0 uid=0 perms=0777 mtime=1503558135 +raw flags=80 phys_align=64K] usr/lib/graphics/omap5430ES2_0/libpvr2d.so=usr/lib/graphics/omap5430ES2_0/libpvr2d.so
 [type=file gid=0 uid=0 perms=0777 mtime=1503558135 +raw flags=80 phys_align=64K] usr/lib/graphics/omap5430ES2_0/pvrsrv.so=usr/lib/graphics/omap5430ES2_0/pvrsrv.so
@@ -89,7 +88,8 @@
 [type=file gid=0 uid=0 perms=0644 mtime=1503558131 +raw flags=0 phys_align=4K] etc/firmware/cpld.jpf=etc/firmware/cpld.jpf
 [type=file gid=0 uid=0 perms=0644 mtime=1503558131 +raw flags=0 phys_align=4K] etc/firmware/cpld_MY18_5.jpf=etc/firmware/cpld_MY18_5.jpf
 [type=dir gid=0 uid=0 dperms=0755 mtime=0] etc/security
-[type=file gid=0 uid=0 perms=0644 mtime=1503558136 +raw flags=0 phys_align=4K] etc/security/ford_cert.pem=etc/security/cc_cert.pem
+[type=file gid=0 uid=0 perms=0644 mtime=1503558136 +raw flags=0 phys_align=4K] etc/security/ford_cert.pem=etc/security/prod_cert.pem
+[type=file gid=0 uid=0 perms=0644 mtime=1503558136 +raw flags=0 phys_align=4K] etc/security/dev_cert.pem=etc/security/dev_cert.pem
 [type=file gid=0 uid=0 perms=0644 mtime=1503558128 +raw flags=0 phys_align=4K] etc/enum-usb.conf=etc/enum-usb.conf
 [type=dir gid=0 uid=0 dperms=0755 mtime=0] etc/system
 [type=dir gid=0 uid=0 dperms=0755 mtime=0] etc/system/enum
@@ -107,30 +107,28 @@
 [type=file gid=0 uid=0 perms=01777 mtime=1503554354 +raw flags=16 phys_align=64K] proc/boot/enum-devices=proc/boot/enum-devices
 [type=file gid=0 uid=0 perms=01777 mtime=1503554354 +raw flags=16 phys_align=4K] proc/boot/enum-usb=proc/boot/enum-usb
 [type=file gid=0 uid=0 perms=01777 mtime=1503558238 +raw flags=16 phys_align=4K] proc/boot/i2c-omap35xx-omap4=proc/boot/i2c-omap35xx-omap4
-# ---
 [type=file gid=0 uid=0 perms=01777 mtime=1503558120 +raw flags=16 phys_align=1M] proc/boot/io-pkt-v6-hc=proc/boot/io-pkt-v6-hc
 [type=file gid=0 uid=0 perms=01777 mtime=1503554354 +raw flags=16 phys_align=64K] proc/boot/ifconfig=proc/boot/ifconfig
 [type=file gid=0 uid=0 perms=01777 mtime=1503558124 +raw flags=16 phys_align=4K] proc/boot/if_up=proc/boot/if_up
 [type=file gid=0 uid=0 perms=01777 mtime=1503554373 +raw flags=16 phys_align=4K] usr/sbin/inetd=usr/sbin/inetd
 [type=file gid=0 uid=0 perms=01777 mtime=1503554373 +raw flags=16 phys_align=64K] usr/sbin/telnetd=usr/sbin/telnetd
 [type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=4K] bin/login=bin/login
+[type=link gid=0 uid=0 perms=01777 mtime=1503558371 flags=0] var/log=/tmp
+[type=link gid=0 uid=0 perms=01777 mtime=1503558371 flags=0] var/run=/tmp
+[type=link gid=0 uid=0 perms=01777 mtime=1503558371 flags=0] var/lock=/tmp
 [type=file gid=0 uid=0 perms=0666 mtime=1503558371 +raw flags=0 phys_align=4K] etc/inetd.conf=etc/inetd.conf
-# ---
-[type=link gid=0 uid=0 perms=01777 mtime=1503558360 flags=0] var/log=/tmp
-[type=link gid=0 uid=0 perms=01777 mtime=1503558360 flags=0] var/run=/tmp
-[type=link gid=0 uid=0 perms=01777 mtime=1503558360 flags=0] var/lock=/tmp
-[type=file gid=0 uid=0 perms=0666 mtime=1503558360 +raw flags=0 phys_align=4K] etc/mcd.conf=etc/mcd.conf
+[type=file gid=0 uid=0 perms=0666 mtime=1503558371 +raw flags=0 phys_align=4K] etc/mcd.conf=etc/mcd.conf
 [type=file gid=0 uid=0 perms=0666 mtime=1503558128 +raw flags=0 phys_align=4K] etc/mcd.mnt=etc/mcd.mnt
-[type=file gid=0 uid=0 perms=0666 mtime=1503558360 +raw flags=0 phys_align=4K] etc/passwd=etc/passwd
-[type=file gid=0 uid=0 perms=0666 mtime=1503558360 +raw flags=0 phys_align=4K] etc/shadow=etc/shadow
+[type=file gid=0 uid=0 perms=0666 mtime=1503558371 +raw flags=0 phys_align=4K] etc/passwd=etc/passwd
+[type=file gid=0 uid=0 perms=0666 mtime=1503558371 +raw flags=0 phys_align=4K] etc/shadow=etc/shadow
 [type=file gid=0 uid=0 perms=0666 mtime=1503554348 +raw flags=0 phys_align=4K] etc/group=etc/group
 [type=file gid=0 uid=0 perms=0666 mtime=1503554348 +raw flags=0 phys_align=4K] etc/hosts=etc/hosts
 [type=file gid=0 uid=0 perms=0666 mtime=1503554348 +raw flags=0 phys_align=4K] etc/services=etc/services
 [type=file gid=0 uid=0 perms=0666 mtime=1503554348 +raw flags=0 phys_align=4K] etc/motd=etc/motd
-[type=file gid=0 uid=0 perms=0666 mtime=1503558360 +raw flags=0 phys_align=64K] etc/esh=etc/esh
-[type=file gid=0 uid=0 perms=0666 mtime=1503558360 +raw flags=0 phys_align=64K] root/.profile=root/.profile
-[type=file gid=0 uid=0 perms=0666 mtime=1503558360 +raw flags=0 phys_align=4K] etc/update_cpld.sh=etc/update_cpld.sh
-[type=file gid=0 uid=0 perms=0666 mtime=1503558360 +raw flags=0 phys_align=4K] etc/launch_emmcdriver.sh=etc/launch_emmcdriver.sh
+[type=file gid=0 uid=0 perms=0666 mtime=1503558371 +raw flags=0 phys_align=4K] etc/esh=etc/esh
+[type=file gid=0 uid=0 perms=0666 mtime=1503558371 +raw flags=0 phys_align=4K] root/.profile=root/.profile
+[type=file gid=0 uid=0 perms=0666 mtime=1503558371 +raw flags=0 phys_align=4K] etc/update_cpld.sh=etc/update_cpld.sh
+[type=file gid=0 uid=0 perms=0666 mtime=1503558371 +raw flags=0 phys_align=64K] etc/launch_emmcdriver.sh=etc/launch_emmcdriver.sh
 [type=file gid=0 uid=0 perms=01777 mtime=1503558200 +raw flags=16 phys_align=64K] proc/boot/devc-seromap=proc/boot/devc-seromap
 [type=file gid=0 uid=0 perms=01777 mtime=1503554354 +raw flags=16 phys_align=64K] proc/boot/devc-pty=proc/boot/devc-pty
 [type=file gid=0 uid=0 perms=01777 mtime=1503554373 +raw flags=16 phys_align=64K] proc/boot/qconn=proc/boot/qconn
@@ -144,14 +142,14 @@
 [type=file gid=0 uid=0 perms=01777 mtime=1503558354 +raw flags=16 phys_align=4K] proc/boot/update_images=proc/boot/update_images
 [type=file gid=0 uid=0 perms=01777 mtime=1503558324 +raw flags=16 phys_align=4K] proc/boot/crc32=proc/boot/crc32
 [type=file gid=0 uid=0 perms=01777 mtime=1503558235 +raw flags=16 phys_align=4K] proc/boot/disp_rsrmgr=proc/boot/disp_rsrmgr
-[type=file gid=0 uid=0 perms=01777 mtime=1503558185 +raw flags=16 phys_align=64K] proc/boot/dev-cpld=proc/boot/dev-cpld
-[type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=4K] proc/boot/cat=proc/boot/cat
+[type=file gid=0 uid=0 perms=01777 mtime=1503558185 +raw flags=16 phys_align=4K] proc/boot/dev-cpld=proc/boot/dev-cpld
+[type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=64K] proc/boot/cat=proc/boot/cat
 [type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=4K] proc/boot/chmod=proc/boot/chmod
 [type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=4K] proc/boot/cp=proc/boot/cp
 [type=file gid=0 uid=0 perms=01777 mtime=1503554372 +raw flags=16 phys_align=4K] proc/boot/date=proc/boot/date
 [type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=4K] proc/boot/echo=proc/boot/echo
 [type=file gid=0 uid=0 perms=01777 mtime=1503554372 +raw flags=16 phys_align=4K] proc/boot/grep=proc/boot/grep
-[type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=1M] proc/boot/ksh=proc/boot/ksh
+[type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=64K] proc/boot/ksh=proc/boot/ksh
 [type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=4K] proc/boot/ln=proc/boot/ln
 [type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=4K] proc/boot/ls=proc/boot/ls
 [type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=4K] proc/boot/mkdir=proc/boot/mkdir
@@ -198,17 +196,16 @@
 [type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80 phys_align=1M] proc/boot/libssl.so.2=proc/boot/libssl.so.2
 [type=link gid=0 uid=0 perms=0777 mtime=1503554374 flags=80] proc/boot/libssl.so=libssl.so.2
 [type=file gid=0 uid=0 perms=0777 mtime=1503554355 +raw flags=80 phys_align=64K] proc/boot/libsocket.so.3=proc/boot/libsocket.so.3
-[type=link gid=0 uid=0 perms=0777 mtime=1503554355 flags=80] proc/boot/libsocket.so=libsocket.so.3
 [type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80 phys_align=64K] proc/boot/libarchive.so.12=proc/boot/libarchive.so.12
 [type=link gid=0 uid=0 perms=0777 mtime=1503554374 flags=80] proc/boot/libarchive.so=libarchive.so.12
 [type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80 phys_align=64K] proc/boot/libiconv.so.1=proc/boot/libiconv.so.1
 [type=link gid=0 uid=0 perms=0777 mtime=1503554374 flags=80] proc/boot/libiconv.so=libiconv.so.1
 [type=dir gid=0 uid=0 dperms=0755 mtime=0] etc
 [type=dir gid=0 uid=0 dperms=0755 mtime=0] var
-[type=link gid=0 uid=0 perms=01777 mtime=1503558361 flags=0] var/lock=E:/buildB/com.pas.for.gofast/SS_BSP/../SS_BSP/tmp
-[type=link gid=0 uid=0 perms=01777 mtime=1503558361 flags=0] var/log=E:/buildB/com.pas.for.gofast/SS_BSP/../SS_BSP/tmp
-[type=link gid=0 uid=0 perms=01777 mtime=1503558361 flags=0] var/run=E:/buildB/com.pas.for.gofast/SS_BSP/../SS_BSP/tmp
-[type=link gid=0 uid=0 perms=01777 mtime=1503558361 flags=0] var/tmp=E:/buildB/com.pas.for.gofast/SS_BSP/../SS_BSP/tmp
+[type=link gid=0 uid=0 perms=01777 mtime=1503558371 flags=0] var/lock=E:/buildB/com.pas.for.gofast/SS_BSP/../SS_BSP/tmp
+[type=link gid=0 uid=0 perms=01777 mtime=1503558371 flags=0] var/log=E:/buildB/com.pas.for.gofast/SS_BSP/../SS_BSP/tmp
+[type=link gid=0 uid=0 perms=01777 mtime=1503558371 flags=0] var/run=E:/buildB/com.pas.for.gofast/SS_BSP/../SS_BSP/tmp
+[type=link gid=0 uid=0 perms=01777 mtime=1503558371 flags=0] var/tmp=E:/buildB/com.pas.for.gofast/SS_BSP/../SS_BSP/tmp
 [type=dir gid=0 uid=0 dperms=0755 mtime=0] usr
 [type=file gid=0 uid=0 perms=01755 mtime=1503558120 +raw flags=0 phys_align=64K] usr/sbin/update_radio.sh=usr/sbin/update_radio.sh
 [type=file gid=0 uid=0 perms=01755 mtime=1503558136 +raw flags=16 phys_align=64K] usr/sbin/SS_PowerManager=usr/sbin/SS_PowerManager

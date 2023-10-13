@@ -8,3 +8,7 @@ MKIFS_PATH=./fs/ ./tools/mkifs-macos -t ifs ./buildfile.bld $d
 
 
 #./tools/dumpifs-macos -vv $d
+
+scp $d ubuntu@192.168.1.77:/home/ubuntu/ifs
+
+echo "DONE!"
