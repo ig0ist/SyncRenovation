@@ -70,6 +70,13 @@ Default IP: `192.168.1.26`
 * Vendor : 0x0b95 (ASIX Elec. Corp.)
 * Product : 0x772b (AX88772C)
 
+### Telnet Password
+
+Login `root`  
+```
+#Pasa3Fo
+```
+
 
 # Changelog
 
