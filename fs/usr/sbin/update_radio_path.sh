@@ -23,17 +23,6 @@ ENH_DAB=""
 
 
 
-# ------------------------------------ Custom install PRE ------------------------------
-if [ -f $PAYLOADCustom/path_pre_install.sh ] ; then
-  cp $PAYLOADCustom/path_pre_install.sh /tmp/path_pre_install.sh
-  chmod 0777 /tmp/path_pre_install.sh
-  sh /tmp/path_pre_install.sh
-  sleep 15
-  waitfor /tmp/status_update_custom_pre
-fi
-
-
-
 function exit_reformat
 {
 	echo "Reformat install end" >> $LOG_FILE
@@ -461,6 +450,22 @@ while ! [ -e /fs/usb0 ] ; do
 	echo "Please insert USB stick..." > $DISPLAY
 	waitfor /fs/usb0
 done
+
+
+
+
+# ------------------------------------ Custom install PRE ------------------------------
+if [ -f $PAYLOADCustom/path_pre_install.sh ] ; then
+  cp $PAYLOADCustom/path_pre_install.sh /tmp/path_pre_install.sh
+  chmod 0777 /tmp/path_pre_install.sh
+  sh /tmp/path_pre_install.sh
+  sleep 15
+  waitfor /tmp/status_update_custom_pre
+fi
+
+
+
+
 
 echo "Searching for update packages..." >> $LOG_FILE
 echo "Searching for update packages..." > $DISPLAY
