@@ -80,8 +80,23 @@ Login `root`
 
 # Changelog
 
+
 ### 2023-10-13 
 
 * Init release with QNX-REFORMAT-DEV
 * Support telnet & qconn
 * Support USB-LAN 
+
+
+## Todo Files
+
+
+* Unzip & zip in `/proc/boot/`
+* `/usr/lib/graphics/..../graphics_p.conf`
+* /proc/boot/bzip2
+* /proc/boot/chsum
+* /proc/boot/diff
+* /proc/boot/display_image
+* /proc/boot/sqlite3
+* /proc/boot/strings
+* /proc/boot/tail
