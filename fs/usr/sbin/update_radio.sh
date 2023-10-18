@@ -500,9 +500,16 @@ echo "Repartitioning eMMC..." > $DISPLAY
 partition >> $LOG_FILE
 
 if [ $? -ne 0 ]; then
-	echo "Failed to partition eMMC..." >> $LOG_FILE	
-	echo "Error failed to partition eMMC..." > $DISPLAY
-	exit_reformat
+	echo "Failed to partition eMMC Method 1..." >> $LOG_FILE
+	echo "Error failed to partition eMMC Method 1..." > $DISPLAY
+
+	partition_SDINBDG4-64G >> $LOG_FILE
+
+	if [ $? -ne 0 ]; then
+		echo "Failed to partition eMMC Method 2..." >> $LOG_FILE
+		echo "Error failed to partition eMMC Method 2..." > $DISPLAY
+		exit_reformat
+	fi
 fi
 
 mount -e /dev/hd0
