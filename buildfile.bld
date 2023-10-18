@@ -151,8 +151,7 @@
 [type=file gid=0 uid=0 perms=01777 mtime=1503558352 +raw flags=16 phys_align=4K] proc/boot/update_boot=proc/boot/update_boot
 [type=file gid=0 uid=0 perms=01777 mtime=1503558354 +raw flags=16 phys_align=4K] proc/boot/update_images=proc/boot/update_images
 [type=file gid=0 uid=0 perms=01777 mtime=1503558324 +raw flags=16 phys_align=4K] proc/boot/crc32=proc/boot/crc32
-[type=file gid=0 uid=0 perms=01777 mtime=1503558235 +raw flags=16 phys_align=4K] proc/boot/disp_rsrmgr=proc/boot/disp_rsrmgr
-[type=file gid=0 uid=0 perms=01777 mtime=1503558235 +raw flags=16 phys_align=4K] proc/boot/disp_rsrmgr2=proc/boot/disp_rsrmgr2
+[type=file gid=0 uid=0 perms=01777 mtime=1503558235 +raw flags=16 phys_align=4K] proc/boot/disp_rsrmgr=proc/boot/disp_rsrmgr2
 [type=file gid=0 uid=0 perms=01777 mtime=1503558185 +raw flags=16 phys_align=4K] proc/boot/dev-cpld=proc/boot/dev-cpld
 [type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=64K] proc/boot/cat=proc/boot/cat
 [type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=4K] proc/boot/chmod=proc/boot/chmod
@@ -226,8 +225,7 @@
 [type=file gid=0 uid=0 perms=01755 mtime=1503558329 +raw flags=16 phys_align=4K] usr/sbin/hwid=usr/sbin/hwid
 [type=file gid=0 uid=0 perms=01755 mtime=1503554354 +raw flags=16 phys_align=4K] usr/sbin/mqueue=usr/sbin/mqueue
 [type=file gid=0 uid=0 perms=01755 mtime=1503558133 +raw flags=16 phys_align=64K] usr/sbin/screen=usr/sbin/screen
-[type=file gid=0 uid=0 perms=01755 mtime=1503558327 +raw flags=16 phys_align=4K] usr/sbin/dispmon=usr/sbin/dispmon
-[type=file gid=0 uid=0 perms=01755 mtime=1503558327 +raw flags=16 phys_align=4K] usr/sbin/dispmon2=usr/sbin/dispmon2
+[type=file gid=0 uid=0 perms=01755 mtime=1503558327 +raw flags=16 phys_align=4K] usr/sbin/dispmon=usr/sbin/dispmon2
 [type=file gid=0 uid=0 perms=01755 mtime=1503558339 +raw flags=16 phys_align=4K] usr/sbin/read_lst=usr/sbin/read_lst
 [type=file gid=0 uid=0 perms=01755 mtime=1503554373 +raw flags=16 phys_align=4K] usr/sbin/mcd=usr/sbin/mcd
 [type=file gid=0 uid=0 perms=01755 mtime=1503554373 +raw flags=16 phys_align=64K] usr/sbin/openssl=usr/sbin/openssl
