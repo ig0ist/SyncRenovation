@@ -507,7 +507,7 @@ if [ $? -ne 0 ]; then
 	echo "Failed to partition eMMC Method 1..." >> $LOG_FILE
 	echo "Error failed to partition eMMC Method 1..." > $DISPLAY
 
-	partition_i21 >> $LOG_FILE
+	partition_SDINBDG4-64G >> $LOG_FILE
 
   if [ $? -ne 0 ]; then
   	echo "Failed to partition eMMC Method 2..." >> $LOG_FILE
