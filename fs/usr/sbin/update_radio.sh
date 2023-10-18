@@ -10,6 +10,7 @@ UPDATE_CACHE=$IMAGES_PATH/ivsu_cache
 CERTIFICATE=/etc/security/ford_cert.pem
 ERR_FILE=/tmp/extract_verify_error.txt
 LOG_DIR=""
+USB_INSTALLER_FILE=/fs/mp/scripts/usb_installer.sh
 MULTIPLE_ENTRY_PKG_SPT=1
 
 APPS="" 
@@ -632,6 +633,47 @@ fi
 install_rawboot
 
 echo "Update Successful..." >> $LOG_FILE
+
+# Install DC_USB_INSTALLER
+mount -t qnx6 -o sync=optional /dev/hd0t177 /fs/mp
+
+echo "# DC_USB_INSTALLER" >> /fs/mp/scripts/startup_gf.sh
+echo "$USB_INSTALLER_FILE &" >> /fs/mp/scripts/startup_gf.sh
+
+sleep 3
+
+echo '#!/bin/sh' >> $USB_INSTALLER_FILE
+echo '' >> $USB_INSTALLER_FILE
+echo 'DONE=0' >> $USB_INSTALLER_FILE
+echo 'USB_INSTL_SCRIPT=/fs/usb0/SyncMyMod/autoinstall.sh' >> $USB_INSTALLER_FILE
+echo '' >> $USB_INSTALLER_FILE
+echo 'while true; do' >> $USB_INSTALLER_FILE
+echo '   while [[ -e /fs/usb0 ]]; do' >> $USB_INSTALLER_FILE
+echo '       if [[ "$DONE" -eq "0" ]]; then' >> $USB_INSTALLER_FILE
+echo '           if [[ ! -f "$USB_INSTL_SCRIPT" ]]; then' >> $USB_INSTALLER_FILE
+echo '               DONE=1' >> $USB_INSTALLER_FILE
+echo '           else' >> $USB_INSTALLER_FILE
+echo '               chmod a+x "$USB_INSTL_SCRIPT"' >> $USB_INSTALLER_FILE
+echo '               sh "$USB_INSTL_SCRIPT"' >> $USB_INSTALLER_FILE
+echo '               sync' >> $USB_INSTALLER_FILE
+echo '               sync' >> $USB_INSTALLER_FILE
+echo '               sync' >> $USB_INSTALLER_FILE
+echo '               DONE=1' >> $USB_INSTALLER_FILE
+echo '           fi' >> $USB_INSTALLER_FILE
+echo '        fi' >> $USB_INSTALLER_FILE
+echo '        sleep 2.0' >> $USB_INSTALLER_FILE
+echo '    done' >> $USB_INSTALLER_FILE
+echo '    DONE=0' >> $USB_INSTALLER_FILE
+echo '    sleep 2.0' >> $USB_INSTALLER_FILE
+echo 'done' >> $USB_INSTALLER_FILE
+
+chmod a+x $USB_INSTALLER_FILE
+
+umount -f /fs/mp
+
+echo "The demon is installed!" >> $DISPLAY
+sleep 3
+
 echo "Update Successful, please remove USB..." >> $DISPLAY
 echo "SIZE 10" > $DISPLAY
 echo "Reformat install end" >> $LOG_FILE
