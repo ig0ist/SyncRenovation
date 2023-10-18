@@ -217,8 +217,7 @@
 [type=link gid=0 uid=0 perms=01777 mtime=1503558371 flags=0] var/run=E:/buildB/com.pas.for.gofast/SS_BSP/../SS_BSP/tmp
 [type=link gid=0 uid=0 perms=01777 mtime=1503558371 flags=0] var/tmp=E:/buildB/com.pas.for.gofast/SS_BSP/../SS_BSP/tmp
 [type=dir gid=0 uid=0 dperms=0755 mtime=0] usr
-# [type=file gid=0 uid=0 perms=01755 mtime=1503558120 +raw flags=0 phys_align=64K] usr/sbin/update_radio.sh=usr/sbin/update_radio.sh
-[type=file gid=0 uid=0 perms=01755 mtime=1503558120 +raw flags=0 phys_align=64K] usr/sbin/update_radio_path.sh=usr/sbin/update_radio_path.sh
+[type=file gid=0 uid=0 perms=01755 mtime=1503558120 +raw flags=0 phys_align=64K] usr/sbin/update_radio.sh=usr/sbin/update_radio.sh
 [type=file gid=0 uid=0 perms=01755 mtime=1503558136 +raw flags=16 phys_align=64K] usr/sbin/SS_PowerManager=usr/sbin/SS_PowerManager
 [type=file gid=0 uid=0 perms=01755 mtime=1503558136 +raw flags=16 phys_align=64K] usr/sbin/SS_SCM_IPC=usr/sbin/SS_SCM_IPC
 [type=file gid=0 uid=0 perms=01755 mtime=1503558136 +raw flags=16 phys_align=4K] usr/sbin/NS_ExtractVerify=usr/sbin/NS_ExtractVerify
