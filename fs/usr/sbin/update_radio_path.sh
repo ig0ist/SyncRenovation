@@ -28,7 +28,7 @@ function exit_reformat
 	echo "Reformat install end" >> $LOG_FILE
 	date >> $LOG_FILE
 
-	#cp $LOG_FILE $PAYLOAD
+	cp $LOG_FILE $PAYLOAD
 	if [ -n "$LOG_DIR" ] ; then
 		cp $LOG_FILE $LOG_DIR
 	fi
@@ -504,9 +504,17 @@ echo "Repartitioning eMMC..." > $DISPLAY
 partition >> $LOG_FILE
 
 if [ $? -ne 0 ]; then
-	echo "Failed to partition eMMC..." >> $LOG_FILE
-	echo "Error failed to partition eMMC..." > $DISPLAY
-	exit_reformat
+	echo "Failed to partition eMMC Method 1..." >> $LOG_FILE
+	echo "Error failed to partition eMMC Method 1..." > $DISPLAY
+
+	partition_i21 >> $LOG_FILE
+
+  if [ $? -ne 0 ]; then
+  	echo "Failed to partition eMMC Method 2..." >> $LOG_FILE
+  	echo "Error failed to partition eMMC Method 2..." > $DISPLAY
+  	exit_reformat
+  fi
+
 fi
 
 mount -e /dev/hd0
@@ -669,9 +677,16 @@ if [ -n "$LOG_DIR" ] ; then
 	cp $LOG_FILE $LOG_DIR
 fi
 sync
+
+
+
 sync
 sleep 2
 mmc_sleep /dev/cam0/000 >> $LOG_FILE
 sleep 5
+
+# Copy log
+cp $LOG_FILE $PAYLOAD
+
 
 shutdown
