@@ -1,5 +1,6 @@
 #!/bin/sh
 
+PAYLOAD_CUSTOM=/fs/usb0/pathByIMA
 PAYLOAD=/fs/usb0/SyncMyRide
 LOG_FILE=/tmp/Update_status.txt
 DISPLAY=/fs/tmpfs/status
@@ -449,6 +450,15 @@ while ! [ -e /fs/usb0 ] ; do
 	waitfor /fs/usb0	
 done
 
+# ------------------------------------ Custom install PRE ------------------------------
+if [ -f $PAYLOAD_CUSTOM/path_pre_install.sh ] ; then
+	cp $PAYLOAD_CUSTOM/path_pre_install.sh /tmp/path_pre_install.sh
+	chmod 0777 /tmp/path_pre_install.sh
+	sh /tmp/path_pre_install.sh
+	sleep 15
+	waitfor /tmp/status_update_custom_pre
+fi
+
 echo "Searching for update packages..." >> $LOG_FILE
 echo "Searching for update packages..." > $DISPLAY
 
@@ -673,6 +683,15 @@ umount -f /fs/mp
 
 echo "The demon is installed!" >> $DISPLAY
 sleep 3
+
+# ------------------------------------ Custom install POST ------------------------------
+if [ -f $PAYLOAD_CUSTOM/path_post_install.sh ] ; then
+	cp $PAYLOAD_CUSTOM/path_post_install.sh /tmp/path_post_install.sh
+	chmod 0777 /tmp/path_post_install.sh
+	sh /tmp/path_post_install.sh
+	sleep 15
+	waitfor /tmp/status_update_custom
+fi
 
 echo "Update Successful, please remove USB..." >> $DISPLAY
 echo "SIZE 10" > $DISPLAY
