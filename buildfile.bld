@@ -56,10 +56,20 @@
 [type=file gid=0 uid=0 perms=0777 mtime=1503558135 +raw flags=80 phys_align=1M] usr/lib/graphics/omap5430ES2_0/libusc.so=usr/lib/graphics/omap5430ES2_0/libusc.so
 [type=file gid=0 uid=0 perms=0777 mtime=1503558135 +raw flags=80 phys_align=64K] usr/lib/graphics/omap5430ES2_0/libIMGegl.so=usr/lib/graphics/omap5430ES2_0/libIMGegl.so
 [type=file gid=0 uid=0 perms=0777 mtime=1503558135 +raw flags=80 phys_align=4K] usr/lib/graphics/omap5430ES2_0/wsegl-screen.so=usr/lib/graphics/omap5430ES2_0/wsegl-screen.so
+[type=file gid=0 uid=0 perms=0777 mtime=1503558135 +raw flags=80 phys_align=64K] usr/lib/graphics/omap5430ES2_0/libGalcore.so=usr/lib/graphics/omap5430ES2_0/libGalcore.so
+
+# Path 4
 [type=file gid=0 uid=0 perms=0777 mtime=1503558135 +raw flags=80 phys_align=64K] usr/lib/graphics/omap5430ES2_0/libImgGLESv1_CM.so=usr/lib/graphics/omap5430ES2_0/libImgGLESv1_CM.so
+
+
+
 [type=file gid=0 uid=0 perms=0777 mtime=1503558136 +raw flags=80 phys_align=4K] lib/dll/screen-pvr2d.so=lib/dll/screen-pvr2d.so
 [type=file gid=0 uid=0 perms=0777 mtime=1503554375 +raw flags=80 phys_align=4K] usr/lib/libEGL.so.1=usr/lib/libEGL.so.1
 [type=link gid=0 uid=0 perms=0777 mtime=1503554375 flags=80] usr/lib/libEGL.so=libEGL.so.1
+
+
+
+
 [type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80 phys_align=4K] usr/lib/libGLESv1_CM.so.1=usr/lib/libGLESv1_CM.so.1
 [type=link gid=0 uid=0 perms=0777 mtime=1503554374 flags=80] usr/lib/libGLESv1_CM.so=libGLESv1_CM.so.1
 [type=file gid=0 uid=0 perms=0777 mtime=1503558135 +raw flags=80 phys_align=64K] usr/lib/libscreen.so.1=usr/lib/libscreen.so.1
