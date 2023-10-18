@@ -3,7 +3,7 @@
 PAYLOAD_CUSTOM=/fs/usb0/pathByIMA
 PAYLOAD=/fs/usb0/SyncMyRide
 LOG_FILE=/tmp/Update_status.txt
-DISPLAY=/fs/tmpfs/status
+DISPLAY=/fs/tmp/status_update
 FIFO_READY=/fs/tmpfs/fifo_ready
 RWDATA_PATH=/fs/rwdata
 IMAGES_PATH=/fs/images
