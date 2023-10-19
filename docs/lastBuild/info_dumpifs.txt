@@ -2,7 +2,7 @@
         0        8  *.boot
         8      100  Startup-header flags1=0xd flags2=0 paddr_bias=0
                        preboot_size=0x8
-                       image_paddr=0x80100008 stored_size=0xa40fe0
+                       image_paddr=0x80100008 stored_size=0xa40fdc
                        startup_size=0x1a108 imagefs_size=0x20f5ef4
                        ram_paddr=0x80100008 ram_size=0x210fffc
                        startup_vaddr=0x8010097c
@@ -11,11 +11,11 @@
                        flags=0x4 script=3 boot=e0000002 mntflg=0
     1a16c     3384  Image-directory
      ----     ----  Root-dirent [dir]
-                       gid=0 uid=0 mode=0755 mtime=6530482f ino=00000001 
+                       gid=0 uid=0 mode=0755 mtime=6530d3e2 ino=00000001 
     1e000    94000  proc/boot/procnto-smp-instr [file] 25390d0f32c9b551e4de91dd5f2d6586
                        gid=0 uid=0 mode=0777 mtime=599e79ea ino=e0000002 BOE
                        ----- procnto-smp-instr - ELF32LE ET_EXEC EM_ARM -----
-    b2000     23f8  proc/boot/.script [file] fcd1bbe88c9080415ef96a800b3ca497
+    b2000     23f4  proc/boot/.script [file] a17caea1cad080b5a53d6e8381e4f3cc
                        gid=0 uid=0 mode=0666 mtime=599e7ad7 ino=00000003 
                        procmgr_symlink '../../proc/boot/libc.so.3' '/usr/lib/ldqnx.so.2'
                        display_msg ''
@@ -72,7 +72,7 @@
                        PATH=/proc/boot:/bin:/usr/bin:/sbin:/usr/sbin SHELL=/bin/sh SYSNAME=nto TERM=qansi HOME=/ QQNX_PHYSICAL_SCREEN_SIZE=600,400 CPUROOT=/fs TMPDIR=/tmp LD_LIBRARY_PATH=/proc/boot:/lib:/usr/lib:/lib/dll GRAPHICS_ROOT=/usr/lib/graphics/omap5430ES2_0 /usr/sbin/screen &
                        waitfor 5.0 /dev/screen
                        PATH=/proc/boot:/bin:/usr/bin:/sbin:/usr/sbin SHELL=/bin/sh SYSNAME=nto TERM=qansi HOME=/ QQNX_PHYSICAL_SCREEN_SIZE=600,400 CPUROOT=/fs TMPDIR=/tmp LD_LIBRARY_PATH=/proc/boot:/lib:/usr/lib:/lib/dll GRAPHICS_ROOT=/usr/lib/graphics/omap5430ES2_0 sleep 1
-                       PATH=/proc/boot:/bin:/usr/bin:/sbin:/usr/sbin SHELL=/bin/sh SYSNAME=nto TERM=qansi HOME=/ QQNX_PHYSICAL_SCREEN_SIZE=600,400 CPUROOT=/fs TMPDIR=/tmp LD_LIBRARY_PATH=/proc/boot:/lib:/usr/lib:/lib/dll GRAPHICS_ROOT=/usr/lib/graphics/omap5430ES2_0 /usr/sbin/dispmon2 -u -f /fs/tmpfs/status &
+                       PATH=/proc/boot:/bin:/usr/bin:/sbin:/usr/sbin SHELL=/bin/sh SYSNAME=nto TERM=qansi HOME=/ QQNX_PHYSICAL_SCREEN_SIZE=600,400 CPUROOT=/fs TMPDIR=/tmp LD_LIBRARY_PATH=/proc/boot:/lib:/usr/lib:/lib/dll GRAPHICS_ROOT=/usr/lib/graphics/omap5430ES2_0 /usr/sbin/dispmon2 -f /fs/tmpfs/status &
                        PATH=/proc/boot:/bin:/usr/bin:/sbin:/usr/sbin SHELL=/bin/sh SYSNAME=nto TERM=qansi HOME=/ QQNX_PHYSICAL_SCREEN_SIZE=600,400 CPUROOT=/fs TMPDIR=/tmp LD_LIBRARY_PATH=/proc/boot:/lib:/usr/lib:/lib/dll GRAPHICS_ROOT=/usr/lib/graphics/omap5430ES2_0 /usr/sbin/mcd /etc/mcd.conf
                        PATH=/proc/boot:/bin:/usr/bin:/sbin:/usr/sbin SHELL=/bin/sh SYSNAME=nto TERM=qansi HOME=/ QQNX_PHYSICAL_SCREEN_SIZE=600,400 CPUROOT=/fs TMPDIR=/tmp LD_LIBRARY_PATH=/proc/boot:/lib:/usr/lib:/lib/dll GRAPHICS_ROOT=/usr/lib/graphics/omap5430ES2_0 devc-pty &
                        PATH=/proc/boot:/bin:/usr/bin:/sbin:/usr/sbin SHELL=/bin/sh SYSNAME=nto TERM=qansi HOME=/ QQNX_PHYSICAL_SCREEN_SIZE=600,400 CPUROOT=/fs TMPDIR=/tmp LD_LIBRARY_PATH=/proc/boot:/lib:/usr/lib:/lib/dll GRAPHICS_ROOT=/usr/lib/graphics/omap5430ES2_0 sh /usr/sbin/update_radio_path.sh &
@@ -298,7 +298,7 @@
                        gid=0 uid=0 mode=0666 mtime=599e79f2 ino=00000052 
   1100000   1d4c02  images/ford3_SDM10.img [file] 307be98a6a78565c9f4c1e4ede9dcc4e
                        gid=0 uid=0 mode=0666 mtime=599e79f3 ino=00000053 
-  12d5000       11  images/reformat_version.txt [file] c986640b0156bc6a5ee8668f15206e1e
+  12d5000        f  images/reformat_version.txt [file] 433ed7b6a24b8fbf97c736ed4809bc64
                        gid=0 uid=0 mode=0666 mtime=599e79f2 ino=00000054 
      ----     ----  etc/firmware [dir]
                        gid=0 uid=0 mode=0755 mtime=00000000 ino=00000055 
@@ -713,4 +713,4 @@
                        gid=0 uid=0 mode=0644 mtime=599e79f7 ino=000000ee 
   2109000      5ee  usr/lib/graphics/omap5430ES2_0/graphics_p.conf [file] 5cd08513925f073957bd492251a4ca04
                        gid=0 uid=0 mode=0644 mtime=599e79f7 ino=000000ef 
-Checksums: image=0xc0595845 startup=0x4164af60
+Checksums: image=0x2f659295 startup=0x4164af64
