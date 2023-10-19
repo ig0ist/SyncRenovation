@@ -250,8 +250,8 @@
 [type=file gid=0 uid=0 perms=0644 mtime=1503558135 +raw flags=0 phys_align=4K] usr/lib/graphics/omap5430ES2_0/graphics_l.conf=usr/lib/graphics/omap5430ES2_0/graphics_l.conf
 [type=file gid=0 uid=0 perms=0644 mtime=1503558135 +raw flags=0 phys_align=4K] usr/lib/graphics/omap5430ES2_0/graphics_p.conf=usr/lib/graphics/omap5430ES2_0/graphics_p.conf
 # Path October 2023
-[type=dir gid=0 uid=0 dperms=0755 mtime=0] test
-[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80] test/1U5T.tar.gz=test/1U5T.tar.gz
-[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80] test/HB5T.TAR.GZ=test/HB5T.TAR.GZ
-[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80] test/HB5T.ZIP=test/HB5T.ZIP
-[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80] test/LU5T.TAR.GZ=test/LU5T.TAR.GZ
+#[type=dir gid=0 uid=0 dperms=0755 mtime=0] test
+#[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80] test/1U5T.tar.gz=test/1U5T.tar.gz
+#[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80] test/HB5T.TAR.GZ=test/HB5T.TAR.GZ
+#[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80] test/HB5T.ZIP=test/HB5T.ZIP
+#[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80] test/LU5T.TAR.GZ=test/LU5T.TAR.GZ
