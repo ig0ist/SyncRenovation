@@ -4,7 +4,7 @@ PAYLOAD_CUSTOM=/fs/usb0/pathByIMA
 PAYLOAD=/fs/usb0/SyncMyRide
 LOG_FILE=/tmp/Update_status.txt
 LOG_USB_FILE=/fs/usb0/syncrenovation.log
-DISPLAY=/fs/tmp/status_update
+DISPLAY=/fs/tmpfs/status
 FIFO_READY=/fs/tmpfs/fifo_ready
 RWDATA_PATH=/fs/rwdata
 IMAGES_PATH=/fs/images
@@ -28,8 +28,8 @@ function exit_reformat
 	echo "Reformat install end" >> $LOG_FILE
 	echo "Reformat install end" >> $LOG_USB_FILE
 	date >> $LOG_FILE
-	
-	cp $LOG_FILE $PAYLOAD
+
+	# cp $LOG_FILE $PAYLOAD
 	if [ -n "$LOG_DIR" ] ; then 
 		cp $LOG_FILE $LOG_DIR
 	fi
@@ -74,10 +74,16 @@ function install_apps
 		echo "Error in $APPS : $ERR" >> $LOG_FILE	
 		echo "Error in $APPS : $ERR" >> $LOG_USB_FILE
 		echo "Error in $APPS : $ERR" > $DISPLAY
-		# exit_reformat # <---- DISABLE CHECK CERTIFICATE
+		# if file exists DISABLE_CHECK_CERTIFICATE DISABLE CHECK CERTIFICATE
+		if [ ! -e  $UPDATE_CACHE/.extract_apps/DISABLE_CHECK_CERTIFICATE ]; then
+		  exit_reformat
+		fi
+
 	fi
 	
 	echo "Updating apps package..." > $DISPLAY
+	echo "Updating apps package..." >> $LOG_FILE
+	echo "Updating apps package..." >> $LOG_USB_FILE
 	update_part /dev/hd0t177 $UPDATE_CACHE/.extract_apps/apps.tar.gz >> $LOG_FILE
 
 	if [ $? -ne 0 ]; then
@@ -127,7 +133,7 @@ function install_images
 				echo "Error in $ELEMENT : $ERR" >> $LOG_FILE
 				echo "Error in $ELEMENT : $ERR" >> $LOG_USB_FILE
 				echo "Error in $ELEMENT : $ERR" > $DISPLAY
-				# exit_reformat
+				exit_reformat
 			fi
 
 			echo "Updating maps package..." > $DISPLAY
