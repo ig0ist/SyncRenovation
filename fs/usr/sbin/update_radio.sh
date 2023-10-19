@@ -69,7 +69,7 @@ function install_apps
 		ERR=`cat $ERR_FILE`
 		echo "Error in $APPS : $ERR" >> $LOG_FILE	
 		echo "Error in $APPS : $ERR" > $DISPLAY
-		exit_reformat
+		# exit_reformat # <---- DISABLE CHECK CERTIFICATE
 	fi
 	
 	echo "Updating apps package..." > $DISPLAY
