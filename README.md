@@ -1,4 +1,4 @@
-# Sync Renovation 
+# SyncRenovation 
 
 Rebuild Reformat-IFS for Sync 3 
 
@@ -50,8 +50,8 @@ ToDo
 - [X] Write tool update `buildfile.bld` - use manual, not need automation 
 - [X] Support USB-Lan
 - [ ] SSH Server 
-- [ ] Support MY20 new Display 
-- [ ] Support new EMMC
+- [x] Support MY20 new Display 
+- [x] Support new EMMC
 - [ ] `jq` tool for read&work JSON files in sh
 - [ ] More and more docs
 
@@ -81,22 +81,25 @@ Login `root`
 # Changelog
 
 
+### 2023-10-19
+
+* Make release `SyncRenovation By I.M.A. V.6`
+* Support MY20 new Display: fix dispmon &  switch disp_rsrmgr and dispmon to new versions & add files graphics_l.conf,graphics_p.conf and SO libs
+* Support new EMMC: `partition_SDINBDG4-64G`
+* images: update
+* switch `update_radio.sh` 
+* update_radio.sh: add custom payload hooks
+* update_radio.sh: add USB_INSTALLER installation
+* Add `bzip2`
+* Add `chsum`
+* Add `diff`
+* Add `strings`
+* Add `tail`
+* Add `zip unzip`
+
 ### 2023-10-13 
 
 * Init release with QNX-REFORMAT-DEV
 * Support telnet & qconn
 * Support USB-LAN 
 
-
-## Todo Files
-
-
-* Unzip & zip in `/proc/boot/`
-* `/usr/lib/graphics/..../graphics_p.conf`
-* /proc/boot/bzip2
-* /proc/boot/chsum
-* /proc/boot/diff
-* /proc/boot/display_image
-* /proc/boot/sqlite3
-* /proc/boot/strings
-* /proc/boot/tail

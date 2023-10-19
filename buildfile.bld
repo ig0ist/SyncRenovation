@@ -3,7 +3,7 @@
 [+page_align]
 [prefix=""]
 [mount="/"]
-[type=file gid=0 uid=0 perms=0666 mtime=1503558359  flags=0 phys_align=4K +script] proc/boot/.script
+[type=file gid=0 uid=0 perms=0666 mtime=1503558359  flags=0 phys_align=4K +script] proc/boot/.script=proc/boot/.script
 [type=link gid=0 uid=0 perms=01777 mtime=1503558370 flags=0] bin/sh=/proc/boot/ksh
 [type=link gid=0 uid=0 perms=01777 mtime=1503558370 flags=0] dev/console=/dev/ser1
 [type=link gid=0 uid=0 perms=01777 mtime=1503558370 flags=0] tmp=/dev/shmem
