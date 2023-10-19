@@ -81,7 +81,14 @@ Login `root`
 # Changelog
 
 
-### 2023-10-19
+### 2023-10-19 V6.1
+
+* Make release `SyncRenovation By I.M.A. V6.1`
+* Add log to `/fs/usb0/syncrenovation.log` from variable `$LOG_USB_FILE`
+* Fix path_pre_install.sh & post install no wait file
+* Back param u in `dispmon -u`, for support display
+
+### 2023-10-19 V6 
 
 * Make release `SyncRenovation By I.M.A. V.6`
 * Support MY20 new Display: fix dispmon &  switch disp_rsrmgr and dispmon to new versions & add files graphics_l.conf,graphics_p.conf and SO libs
