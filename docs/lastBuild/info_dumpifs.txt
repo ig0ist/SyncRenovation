@@ -2,7 +2,7 @@
         0        8  *.boot
         8      100  Startup-header flags1=0xd flags2=0 paddr_bias=0
                        preboot_size=0x8
-                       image_paddr=0x80100008 stored_size=0x944c50
+                       image_paddr=0x80100008 stored_size=0xa3b4dc
                        startup_size=0x1a108 imagefs_size=0x20f5ef4
                        ram_paddr=0x80100008 ram_size=0x210fffc
                        startup_vaddr=0x8010097c
@@ -11,7 +11,7 @@
                        flags=0x4 script=3 boot=e0000002 mntflg=0
     1a16c     3320  Image-directory
      ----     ----  Root-dirent [dir]
-                       gid=0 uid=0 mode=0755 mtime=65317db5 ino=00000001 
+                       gid=0 uid=0 mode=0755 mtime=65319089 ino=00000001 
     1e000    94000  proc/boot/procnto-smp-instr [file] 25390d0f32c9b551e4de91dd5f2d6586
                        gid=0 uid=0 mode=0777 mtime=599e79ea ino=e0000002 BOE
                        ----- procnto-smp-instr - ELF32LE ET_EXEC EM_ARM -----
@@ -276,27 +276,27 @@
                        ----- libVS_CANShadowIf.so - ELF32LE ET_DYN EM_ARM -----
    92a000     9506  images/bar.img [file] 2279e21af11a2b2cecab1d56dde6d3c3
                        gid=0 uid=0 mode=0666 mtime=599e79f1 ino=00000048 
-   940000    bb800  images/ford1.img [file] d6eadb594ce3d3bb8d85f5c1f6995b40
+   940000    bb800  images/ford1.img [file] 1d9a7dfb586755386081216d6c29d0b8
                        gid=0 uid=0 mode=0666 mtime=599e79f1 ino=00000049 
-   a00000    bb800  images/ford2.img [file] 1571bdafbef6345175f3477a2a124b7d
+   a00000    bb800  images/ford2.img [file] f03ab6318b3fb309e479756d1fa4e181
                        gid=0 uid=0 mode=0666 mtime=599e79f2 ino=0000004a 
-   ac0000    bb800  images/ford3.img [file] 4c7a332b787e9f4b321651fde6a86e24
+   ac0000    bb800  images/ford3.img [file] 0a7f1fc5aacf2f877e379ed2cca4e192
                        gid=0 uid=0 mode=0666 mtime=599e79f2 ino=0000004b 
    b7c000     3318  images/bar_SDM4.img [file] 1788533343a4aec2a0a317c8ee3bc0c8
                        gid=0 uid=0 mode=0666 mtime=599e79f3 ino=0000004c 
-   b80000    3fc00  images/ford1_SDM4.img [file] 4420f9755b5c1419a5c99334d338b9b1
+   b80000    3fc00  images/ford1_SDM4.img [file] 9a6704b5f7bdef7895355666e386fa7e
                        gid=0 uid=0 mode=0666 mtime=599e79f3 ino=0000004d 
-   bc0000    3fc00  images/ford2_SDM4.img [file] 9825e04f7bf8e9969dc743b386024a0e
+   bc0000    3fc00  images/ford2_SDM4.img [file] 4b29f5792ac6d1820db0ff7446e7f143
                        gid=0 uid=0 mode=0666 mtime=599e79f1 ino=0000004e 
-   c00000    3fc00  images/ford3_SDM4.img [file] c2fd8e917dc12c3e68213b2fb20d69c5
+   c00000    3fc00  images/ford3_SDM4.img [file] 59d4af9728ae6e075a0373b93e1b44dc
                        gid=0 uid=0 mode=0666 mtime=599e79f1 ino=0000004f 
    c40000    150e2  images/bar_SDM10.img [file] 42a4b4819ce07d5a89a40e0d5f624fad
                        gid=0 uid=0 mode=0666 mtime=599e79f1 ino=00000050 
-   d00000   1d4c00  images/ford1_SDM10.img [file] 4f207d31affc11aa3fea302aaf4d6ac0
+   d00000   1d4c02  images/ford1_SDM10.img [file] 8cab12a2bdb0dcbe1962d6ba4cc78c9c
                        gid=0 uid=0 mode=0666 mtime=599e79f2 ino=00000051 
-   f00000   1d4c00  images/ford2_SDM10.img [file] 6e69f367700ecaaeeaada349678097ce
+   f00000   1d4c02  images/ford2_SDM10.img [file] 3e91a89a80c606f047b0b0a3ae3c7d50
                        gid=0 uid=0 mode=0666 mtime=599e79f2 ino=00000052 
-  1100000   1d4c00  images/ford3_SDM10.img [file] 15bd01bab69cf1c0b899315ce31182c3
+  1100000   1d4c02  images/ford3_SDM10.img [file] 307be98a6a78565c9f4c1e4ede9dcc4e
                        gid=0 uid=0 mode=0666 mtime=599e79f3 ino=00000053 
   12d5000       1d  images/reformat_version.txt [file] dcbbb0d35ab93ff22250e8386d63dbe2
                        gid=0 uid=0 mode=0666 mtime=599e79f2 ino=00000054 
@@ -707,4 +707,4 @@
                        gid=0 uid=0 mode=0644 mtime=599e79f7 ino=000000ec 
   2109000      5ee  usr/lib/graphics/omap5430ES2_0/graphics_p.conf [file] 5cd08513925f073957bd492251a4ca04
                        gid=0 uid=0 mode=0644 mtime=599e79f7 ino=000000ed 
-Checksums: image=0x4ab2d991 startup=0x417472f0
+Checksums: image=0xcdbdb38f startup=0x41650a64

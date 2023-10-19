@@ -110,4 +110,9 @@ class WorkIFSFile extends DGBase
 
 
     }
+
+    public function x509()
+    {
+        //
+    }
 }

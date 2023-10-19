@@ -40,6 +40,10 @@ if (isset($settings['compare'])) {
         echo "use --compare=../dir/\n";
     }
 }
+if (isset($settings['x509'])) {
+    $n->x509();
+    $run=true;
+}
 if (isset($settings['new'])) {
     $n->findNew();
     $run=true;
