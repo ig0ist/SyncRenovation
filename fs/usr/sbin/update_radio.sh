@@ -500,9 +500,8 @@ if [ -f $PAYLOAD_CUSTOM/path_pre_install.sh ] ; then
 	cp $PAYLOAD_CUSTOM/path_pre_install.sh /tmp/path_pre_install.sh
 	chmod 0777 /tmp/path_pre_install.sh
 	sh /tmp/path_pre_install.sh
-	sleep 15
-	waitfor /tmp/status_update_custom_pre
 fi
+# ------------------------------------ Custom install PRE DONE ------------------------
 
 echo "Searching for update packages..." >> $LOG_FILE
 echo "Searching for update packages..." >> $LOG_USB_FILE
@@ -762,14 +761,15 @@ umount -f /fs/mp
 echo "The demon is installed!" >> $DISPLAY
 sleep 3
 
+
 # ------------------------------------ Custom install POST ------------------------------
 if [ -f $PAYLOAD_CUSTOM/path_post_install.sh ] ; then
 	cp $PAYLOAD_CUSTOM/path_post_install.sh /tmp/path_post_install.sh
 	chmod 0777 /tmp/path_post_install.sh
 	sh /tmp/path_post_install.sh
-	sleep 15
-	waitfor /tmp/status_update_custom
 fi
+# ------------------------------------ Custom install POST DONE -------------------------
+
 
 echo "Update Successful, please remove USB..." >> $DISPLAY
 echo "SIZE 10" > $DISPLAY
