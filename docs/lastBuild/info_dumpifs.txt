@@ -2,7 +2,7 @@
         0        8  *.boot
         8      100  Startup-header flags1=0xd flags2=0 paddr_bias=0
                        preboot_size=0x8
-                       image_paddr=0x80100008 stored_size=0x9a64d8
+                       image_paddr=0x80100008 stored_size=0x9a64f4
                        startup_size=0x1a108 imagefs_size=0x21f5ef4
                        ram_paddr=0x80100008 ram_size=0x220fffc
                        startup_vaddr=0x8010097c
@@ -11,7 +11,7 @@
                        flags=0x4 script=3 boot=e0000002 mntflg=0
     1a16c     3474  Image-directory
      ----     ----  Root-dirent [dir]
-                       gid=0 uid=0 mode=0755 mtime=65326f6e ino=00000001 
+                       gid=0 uid=0 mode=0755 mtime=6532705d ino=00000001 
     1e000    94000  proc/boot/procnto-smp-instr [file] 25390d0f32c9b551e4de91dd5f2d6586
                        gid=0 uid=0 mode=0777 mtime=599e79ea ino=e0000002 BOE
                        ----- procnto-smp-instr - ELF32LE ET_EXEC EM_ARM -----
@@ -242,7 +242,7 @@
    832000     b0cb  lib/dll/screen-vivante-omap5430.so [file] c4e9bc3422fc4e081c76f48e29ec603f
                        gid=0 uid=0 mode=0777 mtime=599e79f8 ino=c000003b OE
                        ----- screen-vivante-omap5430.so - ELF32LE ET_DYN EM_ARM -----
-   83e000    3576a  lib/libGAL-vivante-omap5430.so.1 [file] e36474cd2d788c99a4f4c2d9cccee6c4
+   83e000    35769  lib/libGAL-vivante-omap5430.so.1 [file] d3a91e4e4a21e64550bf3c40aa549ca1
                        gid=0 uid=0 mode=0777 mtime=599e79f8 ino=c000003c OE
                        ----- libGAL-vivante-omap5430.so.1 - ELF32LE ET_DYN EM_ARM -----
      ----        b  usr/lib/libEGL.so -> libEGL.so.1 [symlink]
@@ -310,7 +310,7 @@
                        gid=0 uid=0 mode=0666 mtime=599e79f2 ino=00000056 
   1200000   1d4c00  images/ford3_SDM10.img [file] 15bd01bab69cf1c0b899315ce31182c3
                        gid=0 uid=0 mode=0666 mtime=599e79f3 ino=00000057 
-  13d5000       1d  images/reformat_version.txt [file] 17c12fc18b60058a7a54068999aeb0a7
+  13d5000       1f  images/reformat_version.txt [file] c66e1d1a58d6d7210a9f4865ba2795b1
                        gid=0 uid=0 mode=0666 mtime=599e79f2 ino=00000058 
      ----     ----  etc/firmware [dir]
                        gid=0 uid=0 mode=0755 mtime=00000000 ino=00000059 
@@ -721,4 +721,4 @@
                        gid=0 uid=0 mode=0644 mtime=599e79f7 ino=000000f1 
   2209000      5ee  usr/lib/graphics/omap5430ES2_0/graphics_p.conf [file] 5cd08513925f073957bd492251a4ca04
                        gid=0 uid=0 mode=0644 mtime=599e79f7 ino=000000f2 
-Checksums: image=0x6b159aff startup=0x414e5a68
+Checksums: image=0xd2f57049 startup=0x414e5a4c
