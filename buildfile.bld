@@ -68,8 +68,16 @@
 
 
 [type=file gid=0 uid=0 perms=0777 mtime=1503558136 +raw flags=80 phys_align=4K] lib/dll/screen-pvr2d.so=lib/dll/screen-pvr2d.so
-[type=file gid=0 uid=0 perms=0777 mtime=1503554375 +raw flags=80 phys_align=4K] usr/lib/libEGL.so.1=usr/lib/libEGL.so.1
+[type=file gid=0 uid=0 perms=0777 mtime=1503558136 +raw flags=80 phys_align=4K] lib/dll/screen-vivante-omap5430.so=lib/dll/screen-vivante-omap5430.so
+
+# ---
+[type=file gid=0 uid=0 perms=0777 mtime=1503558136 +raw flags=80 phys_align=4K] lib/libGAL-vivante-omap5430.so.1=lib/libGAL-vivante-omap5430.so.1
 [type=link gid=0 uid=0 perms=0777 mtime=1503554375 flags=80] usr/lib/libEGL.so=libEGL.so.1
+[type=file gid=0 uid=0 perms=0777 mtime=1503554375 +raw flags=80 phys_align=4K] usr/lib/libEGL.so.1=usr/lib/libEGL.so.1
+
+[type=file gid=0 uid=0 perms=0777 mtime=1503554375 +raw flags=80 phys_align=4K] usr/lib/libEGL.so.1=usr/lib/libEGL.so.1
+
+[type=link gid=0 uid=0 perms=0777 mtime=1503554375 flags=80] lib/libGAL-vivante-omap5430.so=lib/libGAL-vivante-omap5430.so.1
 
 
 
