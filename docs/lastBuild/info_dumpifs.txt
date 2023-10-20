@@ -2,7 +2,7 @@
         0        8  *.boot
         8      100  Startup-header flags1=0xd flags2=0 paddr_bias=0
                        preboot_size=0x8
-                       image_paddr=0x80100008 stored_size=0x988d00
+                       image_paddr=0x80100008 stored_size=0x9895fc
                        startup_size=0x1a108 imagefs_size=0x20f5ef4
                        ram_paddr=0x80100008 ram_size=0x210fffc
                        startup_vaddr=0x8010097c
@@ -11,7 +11,7 @@
                        flags=0x4 script=3 boot=e0000002 mntflg=0
     1a16c     335c  Image-directory
      ----     ----  Root-dirent [dir]
-                       gid=0 uid=0 mode=0755 mtime=6532560c ino=00000001 
+                       gid=0 uid=0 mode=0755 mtime=6532638c ino=00000001 
     1e000    94000  proc/boot/procnto-smp-instr [file] 25390d0f32c9b551e4de91dd5f2d6586
                        gid=0 uid=0 mode=0777 mtime=599e79ea ino=e0000002 BOE
                        ----- procnto-smp-instr - ELF32LE ET_EXEC EM_ARM -----
@@ -279,7 +279,7 @@
                        gid=0 uid=0 mode=0666 mtime=599e79f1 ino=00000048 
    9d0000    bb800  images/ford1.img [file] d6eadb594ce3d3bb8d85f5c1f6995b40
                        gid=0 uid=0 mode=0666 mtime=599e79f1 ino=00000049 
-   a90000    bb800  images/ford2.img [file] 1571bdafbef6345175f3477a2a124b7d
+   a90000    bb800  images/ford2.img [file] c2d478f4a3ddc77868aca49a4bcb182e
                        gid=0 uid=0 mode=0666 mtime=599e79f2 ino=0000004a 
    b50000    bb800  images/ford3.img [file] 4c7a332b787e9f4b321651fde6a86e24
                        gid=0 uid=0 mode=0666 mtime=599e79f2 ino=0000004b 
@@ -287,7 +287,7 @@
                        gid=0 uid=0 mode=0666 mtime=599e79f3 ino=0000004c 
    c10000    3fc00  images/ford1_SDM4.img [file] 4420f9755b5c1419a5c99334d338b9b1
                        gid=0 uid=0 mode=0666 mtime=599e79f3 ino=0000004d 
-   c50000    3fc00  images/ford2_SDM4.img [file] 9825e04f7bf8e9969dc743b386024a0e
+   c50000    3fc00  images/ford2_SDM4.img [file] 2a22ac591f9f856a5174791117058a1e
                        gid=0 uid=0 mode=0666 mtime=599e79f1 ino=0000004e 
    c90000    3fc00  images/ford3_SDM4.img [file] c2fd8e917dc12c3e68213b2fb20d69c5
                        gid=0 uid=0 mode=0666 mtime=599e79f1 ino=0000004f 
@@ -295,7 +295,7 @@
                        gid=0 uid=0 mode=0666 mtime=599e79f1 ino=00000050 
    d00000   1d4c00  images/ford1_SDM10.img [file] 4f207d31affc11aa3fea302aaf4d6ac0
                        gid=0 uid=0 mode=0666 mtime=599e79f2 ino=00000051 
-   f00000   1d4c00  images/ford2_SDM10.img [file] 6e69f367700ecaaeeaada349678097ce
+   f00000   1d4c00  images/ford2_SDM10.img [file] c78c5a4232141719b510b03588043bf3
                        gid=0 uid=0 mode=0666 mtime=599e79f2 ino=00000052 
   1100000   1d4c00  images/ford3_SDM10.img [file] 15bd01bab69cf1c0b899315ce31182c3
                        gid=0 uid=0 mode=0666 mtime=599e79f3 ino=00000053 
@@ -706,8 +706,8 @@
   2101000     65cb  proc/boot/partition_SDINBDG4-64G [file] 377ac5d7b588c7aa40a0e225d2eab92c
                        gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000ec OE
                        ----- partition_SDINBDG4-64G - ELF32LE ET_EXEC EM_ARM -----
-  2108000      45b  usr/lib/graphics/omap5430ES2_0/graphics_l.conf [file] 56a9d4f960d500145a370783dbfca94f
+  2108000      42a  usr/lib/graphics/omap5430ES2_0/graphics_l.conf [file] 8c93308a8624834ec7cfc94a978d4961
                        gid=0 uid=0 mode=0644 mtime=599e79f7 ino=000000ed 
   2109000      5ee  usr/lib/graphics/omap5430ES2_0/graphics_p.conf [file] 5cd08513925f073957bd492251a4ca04
                        gid=0 uid=0 mode=0644 mtime=599e79f7 ino=000000ee 
-Checksums: image=0xfd2a29be startup=0x41703240
+Checksums: image=0x5fb5bce9 startup=0x41702944

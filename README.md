@@ -2,6 +2,15 @@
 
 Rebuild Reformat-IFS for Sync 3 
 
+
+![SyncRenovation 6.4](/docs/images/V6_4.png)
+
+
+
+
+
+
+
 Used tool`s 
 
 * [MkIfs by Bigunclemax](https://github.com/bigunclemax/mkxfs)
