@@ -48,9 +48,8 @@
 [type=file gid=0 uid=0 perms=0777 mtime=1503558183 +raw flags=80 phys_align=4K] usr/lib/libwfdcfg.so.0=usr/lib/libwfdcfg.so.0
 [type=link gid=0 uid=0 perms=0777 mtime=1503558183 flags=80] usr/lib/libwfdcfg-sync3.so=libwfdcfg.so.0
 
-# DROP graphics.conf
-[type=file gid=0 uid=0 perms=0644 mtime=1503558135 +raw flags=0 phys_align=4K] usr/lib/graphics/omap5430ES2_0/graphics.conf=usr/lib/graphics/omap5430ES2_0/graphics.conf
-
+# -------------- graphics -----------
+# [type=file gid=0 uid=0 perms=0644 mtime=1503558135 +raw flags=0 phys_align=4K] usr/lib/graphics/omap5430ES2_0/graphics.conf=usr/lib/graphics/omap5430ES2_0/graphics.conf
 
 [type=file gid=0 uid=0 perms=0777 mtime=1503558135 +raw flags=80 phys_align=64K] usr/lib/graphics/omap5430ES2_0/libWFDomap5430ES2_0.so=usr/lib/graphics/omap5430ES2_0/libWFDomap5430ES2_0.so
 [type=file gid=0 uid=0 perms=0777 mtime=1503558135 +raw flags=80 phys_align=64K] usr/lib/graphics/omap5430ES2_0/libsrv_um.so=usr/lib/graphics/omap5430ES2_0/libsrv_um.so
@@ -159,8 +158,8 @@
 [type=file gid=0 uid=0 perms=01777 mtime=1503558324 +raw flags=16 phys_align=4K] proc/boot/crc32=proc/boot/crc32
 
 # ------ disp_rsrmgr
-[type=file gid=0 uid=0 perms=01777 mtime=1503558235 +raw flags=16 phys_align=4K] proc/boot/disp_rsrmgr=proc/boot/disp_rsrmgr
-#[type=file gid=0 uid=0 perms=01777 mtime=1503558235 +raw flags=16 phys_align=4K] proc/boot/disp_rsrmgr=proc/boot/disp_rsrmgr2
+# proc/boot/disp_rsrmgr=proc/boot/disp_rsrmgr
+[type=file gid=0 uid=0 perms=01777 mtime=1503558235 +raw flags=16 phys_align=4K] proc/boot/disp_rsrmgr=proc/boot/disp_rsrmgr2
 
 
 [type=file gid=0 uid=0 perms=01777 mtime=1503558185 +raw flags=16 phys_align=4K] proc/boot/dev-cpld=proc/boot/dev-cpld
@@ -237,8 +236,7 @@
 [type=file gid=0 uid=0 perms=01755 mtime=1503558133 +raw flags=16 phys_align=64K] usr/sbin/screen=usr/sbin/screen
 
 # ------ dispmon -------
-
-# [type=file gid=0 uid=0 perms=01755 mtime=1503558327 +raw flags=16 phys_align=4K] usr/sbin/dispmon=usr/sbin/dispmon
+# usr/sbin/dispmon=usr/sbin/dispmon
 [type=file gid=0 uid=0 perms=01755 mtime=1503558327 +raw flags=16 phys_align=4K] usr/sbin/dispmon=usr/sbin/dispmon2
 
 
@@ -266,6 +264,7 @@
 [type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80] proc/boot/unzip=proc/boot/unzip
 [type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80] proc/boot/zip=proc/boot/zip
 [type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80] proc/boot/partition_SDINBDG4-64G=proc/boot/partition_SDINBDG4-64G
+# -------------- graphics -----------
 [type=file gid=0 uid=0 perms=0644 mtime=1503558135 +raw flags=0 phys_align=4K] usr/lib/graphics/omap5430ES2_0/graphics_l.conf=usr/lib/graphics/omap5430ES2_0/graphics_l.conf
 [type=file gid=0 uid=0 perms=0644 mtime=1503558135 +raw flags=0 phys_align=4K] usr/lib/graphics/omap5430ES2_0/graphics_p.conf=usr/lib/graphics/omap5430ES2_0/graphics_p.conf
 # Path October 2023
