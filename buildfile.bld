@@ -47,7 +47,11 @@
 [type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80 phys_align=4K] usr/lib/libswblit.so.1=usr/lib/libswblit.so.1
 [type=file gid=0 uid=0 perms=0777 mtime=1503558183 +raw flags=80 phys_align=4K] usr/lib/libwfdcfg.so.0=usr/lib/libwfdcfg.so.0
 [type=link gid=0 uid=0 perms=0777 mtime=1503558183 flags=80] usr/lib/libwfdcfg-sync3.so=libwfdcfg.so.0
+
+# DROP graphics.conf
 [type=file gid=0 uid=0 perms=0644 mtime=1503558135 +raw flags=0 phys_align=4K] usr/lib/graphics/omap5430ES2_0/graphics.conf=usr/lib/graphics/omap5430ES2_0/graphics.conf
+
+
 [type=file gid=0 uid=0 perms=0777 mtime=1503558135 +raw flags=80 phys_align=64K] usr/lib/graphics/omap5430ES2_0/libWFDomap5430ES2_0.so=usr/lib/graphics/omap5430ES2_0/libWFDomap5430ES2_0.so
 [type=file gid=0 uid=0 perms=0777 mtime=1503558135 +raw flags=80 phys_align=64K] usr/lib/graphics/omap5430ES2_0/libsrv_um.so=usr/lib/graphics/omap5430ES2_0/libsrv_um.so
 [type=file gid=0 uid=0 perms=0777 mtime=1503558135 +raw flags=80 phys_align=64K] usr/lib/graphics/omap5430ES2_0/libpvr2d.so=usr/lib/graphics/omap5430ES2_0/libpvr2d.so
@@ -60,6 +64,7 @@
 
 # Path 4
 [type=file gid=0 uid=0 perms=0777 mtime=1503558135 +raw flags=80 phys_align=64K] usr/lib/graphics/omap5430ES2_0/libImgGLESv1_CM.so=usr/lib/graphics/omap5430ES2_0/libImgGLESv1_CM.so
+[type=file gid=0 uid=0 perms=0777 mtime=1503558135 +raw flags=80 phys_align=64K] usr/lib/graphics/omap5430ES2_0/libImgGLESv2.so=usr/lib/graphics/omap5430ES2_0/libImgGLESv2.so
 
 
 
@@ -96,6 +101,7 @@
 [type=file gid=0 uid=0 perms=0666 mtime=1503558130 +raw flags=0 phys_align=4K] images/reformat_version.txt=images/reformat_version.txt
 [type=dir gid=0 uid=0 dperms=0755 mtime=0] etc/firmware
 [type=file gid=0 uid=0 perms=0644 mtime=1503558131 +raw flags=0 phys_align=4K] etc/firmware/cpld.jpf=etc/firmware/cpld.jpf
+[type=file gid=0 uid=0 perms=0644 mtime=1503558131 +raw flags=0 phys_align=4K] etc/firmware/cpld_MY17.jpf=etc/firmware/cpld_MY17.jpf
 [type=file gid=0 uid=0 perms=0644 mtime=1503558131 +raw flags=0 phys_align=4K] etc/firmware/cpld_MY18_5.jpf=etc/firmware/cpld_MY18_5.jpf
 [type=dir gid=0 uid=0 dperms=0755 mtime=0] etc/security
 [type=file gid=0 uid=0 perms=0644 mtime=1503558136 +raw flags=0 phys_align=4K] etc/security/ford_cert.pem=etc/security/prod_cert.pem
@@ -151,7 +157,12 @@
 [type=file gid=0 uid=0 perms=01777 mtime=1503558352 +raw flags=16 phys_align=4K] proc/boot/update_boot=proc/boot/update_boot
 [type=file gid=0 uid=0 perms=01777 mtime=1503558354 +raw flags=16 phys_align=4K] proc/boot/update_images=proc/boot/update_images
 [type=file gid=0 uid=0 perms=01777 mtime=1503558324 +raw flags=16 phys_align=4K] proc/boot/crc32=proc/boot/crc32
-[type=file gid=0 uid=0 perms=01777 mtime=1503558235 +raw flags=16 phys_align=4K] proc/boot/disp_rsrmgr=proc/boot/disp_rsrmgr2
+
+# ------ disp_rsrmgr
+[type=file gid=0 uid=0 perms=01777 mtime=1503558235 +raw flags=16 phys_align=4K] proc/boot/disp_rsrmgr=proc/boot/disp_rsrmgr
+#[type=file gid=0 uid=0 perms=01777 mtime=1503558235 +raw flags=16 phys_align=4K] proc/boot/disp_rsrmgr=proc/boot/disp_rsrmgr2
+
+
 [type=file gid=0 uid=0 perms=01777 mtime=1503558185 +raw flags=16 phys_align=4K] proc/boot/dev-cpld=proc/boot/dev-cpld
 [type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=64K] proc/boot/cat=proc/boot/cat
 [type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=4K] proc/boot/chmod=proc/boot/chmod
@@ -224,7 +235,15 @@
 [type=file gid=0 uid=0 perms=01755 mtime=1503558329 +raw flags=16 phys_align=4K] usr/sbin/hwid=usr/sbin/hwid
 [type=file gid=0 uid=0 perms=01755 mtime=1503554354 +raw flags=16 phys_align=4K] usr/sbin/mqueue=usr/sbin/mqueue
 [type=file gid=0 uid=0 perms=01755 mtime=1503558133 +raw flags=16 phys_align=64K] usr/sbin/screen=usr/sbin/screen
+
+# ------ dispmon -------
+
+# [type=file gid=0 uid=0 perms=01755 mtime=1503558327 +raw flags=16 phys_align=4K] usr/sbin/dispmon=usr/sbin/dispmon
 [type=file gid=0 uid=0 perms=01755 mtime=1503558327 +raw flags=16 phys_align=4K] usr/sbin/dispmon=usr/sbin/dispmon2
+
+
+
+
 [type=file gid=0 uid=0 perms=01755 mtime=1503558339 +raw flags=16 phys_align=4K] usr/sbin/read_lst=usr/sbin/read_lst
 [type=file gid=0 uid=0 perms=01755 mtime=1503554373 +raw flags=16 phys_align=4K] usr/sbin/mcd=usr/sbin/mcd
 [type=file gid=0 uid=0 perms=01755 mtime=1503554373 +raw flags=16 phys_align=64K] usr/sbin/openssl=usr/sbin/openssl
