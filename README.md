@@ -2,6 +2,11 @@
 
 Rebuild Reformat-IFS for Sync 3 
 
+[Sync3story: How we fixed a reformat](https://gist.github.com/bigunclemax/db509488879668ffb6fb7c02761a09c7)
+
+
+
+
 
 ![SyncRenovation 6.4](/docs/images/V6_4.png)
 
