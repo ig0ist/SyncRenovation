@@ -83,6 +83,9 @@ Default IP: `192.168.1.26`
 * Support: Chip ASIX AX88772C, support by  QNX
 * Vendor : 0x0b95 (ASIX Elec. Corp.)
 * Product : 0x772b (AX88772C)
+```
+For example D-Link DUB-E100 rev.B1
+```
 
 ### Telnet Password
 
