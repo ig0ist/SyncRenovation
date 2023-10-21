@@ -551,14 +551,13 @@ partition >> $LOG_FILE
 if [ $? -ne 0 ]; then
 	echo "Failed to partition eMMC Method 1..." >> $LOG_FILE
 	echo "Failed to partition eMMC Method 1..." >> $LOG_USB_FILE
-	echo "Error failed to partition eMMC Method 1..." > $DISPLAY
 
 	partition_SDINBDG4-64G >> $LOG_FILE
 
 	if [ $? -ne 0 ]; then
 		echo "Failed to partition eMMC Method 2..." >> $LOG_FILE
 		echo "Failed to partition eMMC Method 2..." >> $LOG_USB_FILE
-		echo "Error failed to partition eMMC Method 2..." > $DISPLAY
+		echo "Error failed to partition eMMC..." > $DISPLAY
 		exit_reformat
 	fi
 fi
@@ -758,7 +757,7 @@ chmod a+x $USB_INSTALLER_FILE
 
 umount -f /fs/mp
 
-echo "The demon is installed!" >> $DISPLAY
+echo "The daemon is installed!" >> $DISPLAY
 sleep 3
 
 
