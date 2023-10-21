@@ -8,7 +8,7 @@ Rebuild Reformat-IFS for Sync 3
 
 
 
-![SyncRenovation 6.4](/docs/images/V6_4.png)
+![SyncRenovation 6.4](/docs/images/V6_4_3.png)
 
 
 
@@ -94,6 +94,10 @@ Login `root`
 
 # Changelog
 
+
+### 2023-10-21 V6.4.3
+
+* Successful support new display
 
 ### 2023-10-19 V6.1
 
