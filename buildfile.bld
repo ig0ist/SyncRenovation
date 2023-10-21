@@ -273,6 +273,15 @@
 [type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80] proc/boot/zip=proc/boot/zip
 [type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80] proc/boot/partition_SDINBDG4-64G=proc/boot/partition_SDINBDG4-64G
 [type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80] proc/boot/patch=proc/boot/patch
+[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80] proc/boot/du=proc/boot/du
+[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80] proc/boot/pwd=proc/boot/pwd
+[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80] proc/boot/find=proc/boot/find
+[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80] proc/boot/head=proc/boot/head
+[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80] proc/boot/less=proc/boot/less
+[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80] proc/boot/netstat=proc/boot/netstat
+[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80] proc/boot/ping=proc/boot/ping
+[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80] proc/boot/printf=proc/boot/printf
+[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80] proc/boot/top=proc/boot/top
 # -------------- graphics -----------
 [type=file gid=0 uid=0 perms=0644 mtime=1503558135 +raw flags=0 phys_align=4K] usr/lib/graphics/omap5430ES2_0/graphics_l.conf=usr/lib/graphics/omap5430ES2_0/graphics_l.conf
 [type=file gid=0 uid=0 perms=0644 mtime=1503558135 +raw flags=0 phys_align=4K] usr/lib/graphics/omap5430ES2_0/graphics_p.conf=usr/lib/graphics/omap5430ES2_0/graphics_p.conf
