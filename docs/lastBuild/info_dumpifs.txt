@@ -2,20 +2,20 @@
         0        8  *.boot
         8      100  Startup-header flags1=0xd flags2=0 paddr_bias=0
                        preboot_size=0x8
-                       image_paddr=0x80100008 stored_size=0x9a63a8
-                       startup_size=0x1a108 imagefs_size=0x21f5ef4
-                       ram_paddr=0x80100008 ram_size=0x220fffc
+                       image_paddr=0x80100008 stored_size=0xd99b14
+                       startup_size=0x1a108 imagefs_size=0x25f5ef4
+                       ram_paddr=0x80100008 ram_size=0x260fffc
                        startup_vaddr=0x8010097c
       108    1a008  startup.*
     1a110       5c  Image-header mountpoint=/
                        flags=0x4 script=3 boot=e0000002 mntflg=0
-    1a16c     3474  Image-directory
+    1a16c     3668  Image-directory
      ----     ----  Root-dirent [dir]
-                       gid=0 uid=0 mode=0755 mtime=653275f2 ino=00000001 
+                       gid=0 uid=0 mode=0755 mtime=65353116 ino=00000001 
     1e000    94000  proc/boot/procnto-smp-instr [file] 25390d0f32c9b551e4de91dd5f2d6586
                        gid=0 uid=0 mode=0777 mtime=599e79ea ino=e0000002 BOE
                        ----- procnto-smp-instr - ELF32LE ET_EXEC EM_ARM -----
-    b2000     2400  proc/boot/.script [file] fadd7299ba56f23f111a707f15c6c883
+    b2000     2414  proc/boot/.script [file] b1739f953c3211680e01adf832f9298e
                        gid=0 uid=0 mode=0666 mtime=599e7ad7 ino=00000003 
                        procmgr_symlink '../../proc/boot/libc.so.3' '/usr/lib/ldqnx.so.2'
                        display_msg ''
@@ -31,7 +31,7 @@
 '
                        PATH=:/proc/boot:/bin:/usr/bin:/sbin:/usr/sbin devc-seromap -v -F -O4096 -I4096 -b500000 -c48000000/16 0x4806a000^2,104 -u2 &
                        waitfor 5.0 /dev/ser2
-                       PATH=:/proc/boot:/bin:/usr/bin:/sbin:/usr/sbin slogger &
+                       PATH=:/proc/boot:/bin:/usr/bin:/sbin:/usr/sbin slogger -c /tmp/slogger.log &
                        PATH=:/proc/boot:/bin:/usr/bin:/sbin:/usr/sbin pipe &
                        PATH=:/proc/boot:/bin:/usr/bin:/sbin:/usr/sbin mqueue &
                        PATH=:/proc/boot:/bin:/usr/bin:/sbin:/usr/sbin resource_seed dma=0,31
@@ -198,7 +198,7 @@
    344000     f8f3  usr/lib/libswblit.so.1 [file] 10153e7b54ce4665c7635ab0923b42b8
                        gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c000002c OE
                        ----- libswblit.so.1 - ELF32LE ET_DYN EM_ARM -----
-   354000     2912  usr/lib/libwfdcfg.so.0 [file] 2877ef480e6ad5809607ea5fbe11f1a0
+   354000     297e  usr/lib/libwfdcfg.so.0 [file] 426716fefb959c3667c08fa0dd5f66a1
                        gid=0 uid=0 mode=0777 mtime=599e7a27 ino=c000002d OE
                        ----- libwfdcfg.so.0 - ELF32LE ET_DYN EM_ARM -----
      ----        e  usr/lib/libwfdcfg-sync3.so -> libwfdcfg.so.0 [symlink]
@@ -290,7 +290,7 @@
                        gid=0 uid=0 mode=0666 mtime=599e79f1 ino=0000004c 
    a20000    bb800  images/ford1.img [file] d6eadb594ce3d3bb8d85f5c1f6995b40
                        gid=0 uid=0 mode=0666 mtime=599e79f1 ino=0000004d 
-   ae0000    bb800  images/ford2.img [file] d85618e5bec249fd0e47c5d0725554f1
+   ae0000    bb800  images/ford2.img [file] a3baea37f87676b3e4dcef74050b1baa
                        gid=0 uid=0 mode=0666 mtime=599e79f2 ino=0000004e 
    ba0000    bb800  images/ford3.img [file] 4c7a332b787e9f4b321651fde6a86e24
                        gid=0 uid=0 mode=0666 mtime=599e79f2 ino=0000004f 
@@ -306,11 +306,11 @@
                        gid=0 uid=0 mode=0666 mtime=599e79f1 ino=00000054 
    e00000   1d4c00  images/ford1_SDM10.img [file] 4f207d31affc11aa3fea302aaf4d6ac0
                        gid=0 uid=0 mode=0666 mtime=599e79f2 ino=00000055 
-  1000000   1d4c00  images/ford2_SDM10.img [file] 59e5b82a075d6df2fe992919227740d8
+  1000000   1d4c00  images/ford2_SDM10.img [file] 54017faca879b599ad688ad49bc1cda0
                        gid=0 uid=0 mode=0666 mtime=599e79f2 ino=00000056 
   1200000   1d4c00  images/ford3_SDM10.img [file] 15bd01bab69cf1c0b899315ce31182c3
                        gid=0 uid=0 mode=0666 mtime=599e79f3 ino=00000057 
-  13d5000       1f  images/reformat_version.txt [file] dd7dd6bc3ce4e3f293fc2501c4c8a60c
+  13d5000       20  images/reformat_version.txt [file] 5e92030606d334ae376c46aa3ea98483
                        gid=0 uid=0 mode=0666 mtime=599e79f2 ino=00000058 
      ----     ----  etc/firmware [dir]
                        gid=0 uid=0 mode=0755 mtime=00000000 ino=00000059 
@@ -626,99 +626,135 @@
                        gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000cd OE
      ----     ----  etc [dir]
                        gid=0 uid=0 mode=0755 mtime=00000000 ino=000000ce 
-     ----     ----  var [dir]
-                       gid=0 uid=0 mode=0755 mtime=00000000 ino=000000cf 
-     ----       31  var/lock -> E:/buildB/com.pas.for.gofast/SS_BSP/../SS_BSP/tmp [symlink]
-                       gid=0 uid=0 mode=01777 mtime=599e7ae3 ino=000000d0 
-     ----       31  var/log -> E:/buildB/com.pas.for.gofast/SS_BSP/../SS_BSP/tmp [symlink]
-                       gid=0 uid=0 mode=01777 mtime=599e7ae3 ino=000000d1 
-     ----       31  var/run -> E:/buildB/com.pas.for.gofast/SS_BSP/../SS_BSP/tmp [symlink]
-                       gid=0 uid=0 mode=01777 mtime=599e7ae3 ino=000000d2 
-     ----       31  var/tmp -> E:/buildB/com.pas.for.gofast/SS_BSP/../SS_BSP/tmp [symlink]
-                       gid=0 uid=0 mode=01777 mtime=599e7ae3 ino=000000d3 
      ----     ----  usr [dir]
-                       gid=0 uid=0 mode=0755 mtime=00000000 ino=000000d4 
-  1f10000     6513  usr/sbin/update_radio.sh [file] d3f2dee65df79a0f19bae186414da2dc
-                       gid=0 uid=0 mode=01755 mtime=599e79e8 ino=000000d5 
+                       gid=0 uid=0 mode=0755 mtime=00000000 ino=000000cf 
+  1f10000     64cd  usr/sbin/update_radio.sh [file] a58d73b76356e9365b22be0c2cafb15f
+                       gid=0 uid=0 mode=01755 mtime=599e79e8 ino=000000d0 
   1f20000    596d0  usr/sbin/SS_PowerManager [file] 5ab6f511a15d6fc81b670e60baebad53
-                       gid=0 uid=0 mode=01755 mtime=599e79f8 ino=800000d6 E
+                       gid=0 uid=0 mode=01755 mtime=599e79f8 ino=800000d1 E
                        ----- SS_PowerManager - ELF32LE ET_EXEC EM_ARM -----
   1f80000    21ef4  usr/sbin/SS_SCM_IPC [file] e915134ee5459115595a11d8d7b0c5aa
-                       gid=0 uid=0 mode=01755 mtime=599e79f8 ino=800000d7 E
+                       gid=0 uid=0 mode=01755 mtime=599e79f8 ino=800000d2 E
                        ----- SS_SCM_IPC - ELF32LE ET_EXEC EM_ARM -----
   1fa2000     1cd4  usr/sbin/NS_ExtractVerify [file] 49c868663864b70bbd4e3cd4d38a5bf1
-                       gid=0 uid=0 mode=01755 mtime=599e79f8 ino=800000d8 E
+                       gid=0 uid=0 mode=01755 mtime=599e79f8 ino=800000d3 E
                        ----- NS_ExtractVerify - ELF32LE ET_EXEC EM_ARM -----
   1fa4000     32d0  usr/sbin/hwid [file] f16b8f86ea88db83d15c7e6c138b048f
-                       gid=0 uid=0 mode=01755 mtime=599e7ab9 ino=800000d9 E
+                       gid=0 uid=0 mode=01755 mtime=599e7ab9 ino=800000d4 E
                        ----- hwid - ELF32LE ET_EXEC EM_ARM -----
   1fa8000     4948  usr/sbin/mqueue [file] ca89f5edb9df7f5c250fadb739ab9ea6
-                       gid=0 uid=0 mode=01755 mtime=599e6b32 ino=800000da E
+                       gid=0 uid=0 mode=01755 mtime=599e6b32 ino=800000d5 E
                        ----- mqueue - ELF32LE ET_EXEC EM_ARM -----
   1fb0000    5c42b  usr/sbin/screen [file] 220752d4d9b350a91fcae348fc092f20
-                       gid=0 uid=0 mode=01755 mtime=599e79f5 ino=800000db E
+                       gid=0 uid=0 mode=01755 mtime=599e79f5 ino=800000d6 E
                        ----- screen - ELF32LE ET_EXEC EM_ARM -----
   200d000     6854  usr/sbin/dispmon [file] 8507f90ae739b23be59882425dcce7a8
-                       gid=0 uid=0 mode=01755 mtime=599e7ab7 ino=800000dc E
+                       gid=0 uid=0 mode=01755 mtime=599e7ab7 ino=800000d7 E
                        ----- dispmon - ELF32LE ET_EXEC EM_ARM -----
   2014000     2b50  usr/sbin/read_lst [file] 92babb82333e1e0d4aec5eba289010d1
-                       gid=0 uid=0 mode=01755 mtime=599e7ac3 ino=800000dd E
+                       gid=0 uid=0 mode=01755 mtime=599e7ac3 ino=800000d8 E
                        ----- read_lst - ELF32LE ET_EXEC EM_ARM -----
   2017000     9bc7  usr/sbin/mcd [file] 6b86c655eda5b8b3c99b11f57e8103e0
-                       gid=0 uid=0 mode=01755 mtime=599e6b45 ino=800000de E
+                       gid=0 uid=0 mode=01755 mtime=599e6b45 ino=800000d9 E
                        ----- mcd - ELF32LE ET_EXEC EM_ARM -----
   2030000    76bea  usr/sbin/openssl [file] 36269be0b2ee47e04393fc4301da1f83
-                       gid=0 uid=0 mode=01755 mtime=599e6b45 ino=800000df E
+                       gid=0 uid=0 mode=01755 mtime=599e6b45 ino=800000da E
                        ----- openssl - ELF32LE ET_EXEC EM_ARM -----
   20a7000     322c  usr/sbin/setdps [file] a55561d727d955fcd2026441ec7defd0
-                       gid=0 uid=0 mode=01755 mtime=599e79ec ino=800000e0 E
+                       gid=0 uid=0 mode=01755 mtime=599e79ec ino=800000db E
                        ----- setdps - ELF32LE ET_EXEC EM_ARM -----
      ----     ----  lib [dir]
-                       gid=0 uid=0 mode=0755 mtime=00000000 ino=000000e1 
+                       gid=0 uid=0 mode=0755 mtime=00000000 ino=000000dc 
   20b0000    54e68  lib/libcpp.so.4 [file] a4c3b862e1227576a74814ef7334a07e
-                       gid=0 uid=0 mode=0755 mtime=599e79f8 ino=c00000e2 OE
+                       gid=0 uid=0 mode=0755 mtime=599e79f8 ino=c00000dd OE
                        ----- libcpp.so.4 - ELF32LE ET_DYN EM_ARM -----
      ----        b  lib/libcpp.so -> libcpp.so.4 [symlink]
-                       gid=0 uid=0 mode=0755 mtime=599e79f8 ino=c00000e3 OE
+                       gid=0 uid=0 mode=0755 mtime=599e79f8 ino=c00000de OE
   2110000    503c3  lib/libcpp-ne.so.4 [file] 2141d52cd01d4c216be462746ffbca5d
-                       gid=0 uid=0 mode=0755 mtime=599e6b33 ino=c00000e4 OE
+                       gid=0 uid=0 mode=0755 mtime=599e6b33 ino=c00000df OE
                        ----- libcpp-ne.so.4 - ELF32LE ET_DYN EM_ARM -----
      ----        e  lib/libcpp-ne.so -> libcpp-ne.so.4 [symlink]
-                       gid=0 uid=0 mode=0755 mtime=599e6b33 ino=c00000e5 OE
+                       gid=0 uid=0 mode=0755 mtime=599e6b33 ino=c00000e0 OE
   2161000     e1ac  usr/lib/libGLESv1_CL.so.1 [file] 14cc17a1970c7fb76cdde642c970b09d
-                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000e6 OE
+                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000e1 OE
                        ----- libGLESv1_CL.so.1 - ELF32LE ET_DYN EM_ARM -----
      ----       11  usr/lib/libGLESv1_CL.so -> libGLESv1_CL.so.1 [symlink]
-                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000e7 OE
+                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000e2 OE
   2170000     a15c  usr/lib/libGLESv2.so [file] 11ae2778f9cd1ec63de04635b2c7a57a
-                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000e8 OE
+                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000e3 OE
                        ----- libGLESv2.so - ELF32LE ET_DYN EM_ARM -----
   217b000     69b8  proc/boot/bzip2 [file] ed3ae07bc9325451d8a41bfad4fe47d4
-                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000e9 OE
+                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000e4 OE
                        ----- bzip2 - ELF32LE ET_EXEC EM_ARM -----
   2182000     3464  proc/boot/cksum [file] 6255d42fe3b071edbab55dcfb36fe388
-                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000ea OE
+                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000e5 OE
                        ----- cksum - ELF32LE ET_EXEC EM_ARM -----
   2186000    23fd8  proc/boot/diff [file] 504da28c0dd529a7ffc10fad89f06098
-                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000eb OE
+                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000e6 OE
                        ----- diff - ELF32LE ET_EXEC EM_ARM -----
   21aa000     1af4  proc/boot/strings [file] 735bfadb5119eacb9497316a6bf8181d
-                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000ec OE
+                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000e7 OE
                        ----- strings - ELF32LE ET_EXEC EM_ARM -----
   21ac000     2ddc  proc/boot/tail [file] 46b5171cdd4604ea76891d7dd76ed4a8
-                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000ed OE
+                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000e8 OE
                        ----- tail - ELF32LE ET_EXEC EM_ARM -----
   21af000    265c8  proc/boot/unzip [file] 517a1f5f4524bc3cb4ec21b93014a3a7
-                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000ee OE
+                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000e9 OE
                        ----- unzip - ELF32LE ET_EXEC EM_ARM -----
   21d6000    2a610  proc/boot/zip [file] 34b62f162fe501af33fa061af4ad41ef
-                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000ef OE
+                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000ea OE
                        ----- zip - ELF32LE ET_EXEC EM_ARM -----
-  2201000     65cb  proc/boot/partition_SDINBDG4-64G [file] 377ac5d7b588c7aa40a0e225d2eab92c
-                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000f0 OE
+  2201000     65cb  proc/boot/partition_SDINBDG4-64G [file] 1f4ded4d38a4b0e658fec049e1736f30
+                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000eb OE
                        ----- partition_SDINBDG4-64G - ELF32LE ET_EXEC EM_ARM -----
-  2208000      43c  usr/lib/graphics/omap5430ES2_0/graphics_l.conf [file] a8a91d91cd621e89da129842de04105d
-                       gid=0 uid=0 mode=0644 mtime=599e79f7 ino=000000f1 
-  2209000      5ee  usr/lib/graphics/omap5430ES2_0/graphics_p.conf [file] 5cd08513925f073957bd492251a4ca04
-                       gid=0 uid=0 mode=0644 mtime=599e79f7 ino=000000f2 
-Checksums: image=0x73ecffea startup=0x414e5b98
+  2208000    2097c  proc/boot/patch [file] 3e6d9738420fa361581e1660aae3bf06
+                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000ec OE
+                       ----- patch - ELF32LE ET_EXEC EM_ARM -----
+  2229000     26a4  proc/boot/du [file] 8a7167ed2e0bd6607ae73c18962dcb25
+                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000ed OE
+                       ----- du - ELF32LE ET_EXEC EM_ARM -----
+  222c000     1134  proc/boot/pwd [file] 142c52ef872ec8d7a5fa306868493e92
+                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000ee OE
+                       ----- pwd - ELF32LE ET_EXEC EM_ARM -----
+  222e000    14f18  proc/boot/find [file] af4c853e0a02508532a6eba9e785d9bf
+                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000ef OE
+                       ----- find - ELF32LE ET_EXEC EM_ARM -----
+  2243000     1af8  proc/boot/head [file] 7ff8dc086028b1b276fef74289c9e740
+                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000f0 OE
+                       ----- head - ELF32LE ET_EXEC EM_ARM -----
+  2245000    1e36c  proc/boot/less [file] eb264e718ffe0dcfc356e346b83e9102
+                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000f1 OE
+                       ----- less - ELF32LE ET_EXEC EM_ARM -----
+  2264000    1d7a0  proc/boot/netstat [file] a5c79c15ffdfa296ffe32f24f10af852
+                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000f2 OE
+                       ----- netstat - ELF32LE ET_EXEC EM_ARM -----
+  2282000    18098  proc/boot/ping [file] 1e558051908f85982b243fb6b7fc901a
+                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000f3 OE
+                       ----- ping - ELF32LE ET_EXEC EM_ARM -----
+  229b000     2932  proc/boot/printf [file] b76b81e994673d264036cd64d5851445
+                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000f4 OE
+                       ----- printf - ELF32LE ET_EXEC EM_ARM -----
+  229e000     98b4  proc/boot/top [file] ab931a6de1d9539a76b02e05bc7bf566
+                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000f5 OE
+                       ----- top - ELF32LE ET_EXEC EM_ARM -----
+  22a8000      43c  usr/lib/graphics/omap5430ES2_0/graphics_l.conf [file] a8a91d91cd621e89da129842de04105d
+                       gid=0 uid=0 mode=0644 mtime=599e79f7 ino=000000f6 
+  22a9000      5ee  usr/lib/graphics/omap5430ES2_0/graphics_p.conf [file] 5cd08513925f073957bd492251a4ca04
+                       gid=0 uid=0 mode=0644 mtime=599e79f7 ino=000000f7 
+     ----     ----  test [dir]
+                       gid=0 uid=0 mode=0755 mtime=00000000 ino=000000f8 
+  22aa000      86b  test/1U5T.tar.gz [file] 42805f6ecd30b39252c28d3cc790cd47
+                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000f9 OE
+  22ab000     62aa  test/HB5T.TAR.GZ [file] 849a349ec469a753a249ffaf65958a7a
+                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000fa OE
+  22b2000     1549  test/HB5T.ZIP [file] 8305f701615303d6aba732dfaf2d9bac
+                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000fb OE
+  22b4000      79d  test/LU5T.TAR.GZ [file] b611221c6e50c2f9f0d1412281389ff6
+                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000fc OE
+     ----     ----  test/ssh [dir]
+                       gid=0 uid=0 mode=0755 mtime=00000000 ino=000000fd 
+  22b5000   2cbba7  test/ssh/sync3_open_ssh.zip [file] d376473492f5663f2dd370b426f25adf
+                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000fe OE
+  2581000    87a3d  test/ssh/sync_ssh.tar.gz [file] e792875bae7ae832f4b3ccc576f6f18a
+                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000ff OE
+Checksums: image=0xd8956370 startup=0x408f242c

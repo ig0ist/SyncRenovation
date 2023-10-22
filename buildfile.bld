@@ -229,11 +229,11 @@
 [type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80 phys_align=64K] proc/boot/libiconv.so.1=proc/boot/libiconv.so.1
 [type=link gid=0 uid=0 perms=0777 mtime=1503554374 flags=80] proc/boot/libiconv.so=libiconv.so.1
 [type=dir gid=0 uid=0 dperms=0755 mtime=0] etc
-[type=dir gid=0 uid=0 dperms=0755 mtime=0] var
-[type=link gid=0 uid=0 perms=01777 mtime=1503558371 flags=0] var/lock=E:/buildB/com.pas.for.gofast/SS_BSP/../SS_BSP/tmp
-[type=link gid=0 uid=0 perms=01777 mtime=1503558371 flags=0] var/log=E:/buildB/com.pas.for.gofast/SS_BSP/../SS_BSP/tmp
-[type=link gid=0 uid=0 perms=01777 mtime=1503558371 flags=0] var/run=E:/buildB/com.pas.for.gofast/SS_BSP/../SS_BSP/tmp
-[type=link gid=0 uid=0 perms=01777 mtime=1503558371 flags=0] var/tmp=E:/buildB/com.pas.for.gofast/SS_BSP/../SS_BSP/tmp
+
+#[type=link gid=0 uid=0 perms=01777 mtime=1503558371 flags=0] var/lock=E:/buildB/com.pas.for.gofast/SS_BSP/../SS_BSP/tmp
+#[type=link gid=0 uid=0 perms=01777 mtime=1503558371 flags=0] var/log=E:/buildB/com.pas.for.gofast/SS_BSP/../SS_BSP/tmp
+#[type=link gid=0 uid=0 perms=01777 mtime=1503558371 flags=0] var/run=E:/buildB/com.pas.for.gofast/SS_BSP/../SS_BSP/tmp
+#[type=link gid=0 uid=0 perms=01777 mtime=1503558371 flags=0] var/tmp=E:/buildB/com.pas.for.gofast/SS_BSP/../SS_BSP/tmp
 [type=dir gid=0 uid=0 dperms=0755 mtime=0] usr
 [type=file gid=0 uid=0 perms=01755 mtime=1503558120 +raw flags=0 phys_align=64K] usr/sbin/update_radio.sh=usr/sbin/update_radio.sh
 [type=file gid=0 uid=0 perms=01755 mtime=1503558136 +raw flags=16 phys_align=64K] usr/sbin/SS_PowerManager=usr/sbin/SS_PowerManager
@@ -282,12 +282,17 @@
 [type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80] proc/boot/ping=proc/boot/ping
 [type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80] proc/boot/printf=proc/boot/printf
 [type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80] proc/boot/top=proc/boot/top
+[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80] proc/boot/od=proc/boot/od
 # -------------- graphics -----------
 [type=file gid=0 uid=0 perms=0644 mtime=1503558135 +raw flags=0 phys_align=4K] usr/lib/graphics/omap5430ES2_0/graphics_l.conf=usr/lib/graphics/omap5430ES2_0/graphics_l.conf
 [type=file gid=0 uid=0 perms=0644 mtime=1503558135 +raw flags=0 phys_align=4K] usr/lib/graphics/omap5430ES2_0/graphics_p.conf=usr/lib/graphics/omap5430ES2_0/graphics_p.conf
 # Path October 2023
-#[type=dir gid=0 uid=0 dperms=0755 mtime=0] test
-#[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80] test/1U5T.tar.gz=test/1U5T.tar.gz
-#[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80] test/HB5T.TAR.GZ=test/HB5T.TAR.GZ
-#[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80] test/HB5T.ZIP=test/HB5T.ZIP
-#[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80] test/LU5T.TAR.GZ=test/LU5T.TAR.GZ
+[type=dir gid=0 uid=0 dperms=0755 mtime=0] test
+[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80] test/1U5T.tar.gz=test/1U5T.tar.gz
+[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80] test/HB5T.TAR.GZ=test/HB5T.TAR.GZ
+[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80] test/HB5T.ZIP=test/HB5T.ZIP
+[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80] test/LU5T.TAR.GZ=test/LU5T.TAR.GZ
+
+[type=dir gid=0 uid=0 dperms=0755 mtime=0] test/ssh
+[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80] test/ssh/sync3_open_ssh.zip=test/ssh/sync3_open_ssh.zip
+[type=file gid=0 uid=0 perms=0777 mtime=1503554374 +raw flags=80] test/ssh/sync_ssh.tar.gz=test/ssh2/sync.tar.gz
