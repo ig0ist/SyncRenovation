@@ -2,20 +2,20 @@
         0        8  *.boot
         8      100  Startup-header flags1=0xd flags2=0 paddr_bias=0
                        preboot_size=0x8
-                       image_paddr=0x80100008 stored_size=0xd99b14
-                       startup_size=0x1a108 imagefs_size=0x25f5ef4
-                       ram_paddr=0x80100008 ram_size=0x260fffc
+                       image_paddr=0x80100008 stored_size=0xd9d1b4
+                       startup_size=0x1a108 imagefs_size=0x2605ef4
+                       ram_paddr=0x80100008 ram_size=0x261fffc
                        startup_vaddr=0x8010097c
       108    1a008  startup.*
     1a110       5c  Image-header mountpoint=/
                        flags=0x4 script=3 boot=e0000002 mntflg=0
-    1a16c     3668  Image-directory
+    1a16c     36cc  Image-directory
      ----     ----  Root-dirent [dir]
-                       gid=0 uid=0 mode=0755 mtime=65353116 ino=00000001 
+                       gid=0 uid=0 mode=0755 mtime=65353b0e ino=00000001 
     1e000    94000  proc/boot/procnto-smp-instr [file] 25390d0f32c9b551e4de91dd5f2d6586
                        gid=0 uid=0 mode=0777 mtime=599e79ea ino=e0000002 BOE
                        ----- procnto-smp-instr - ELF32LE ET_EXEC EM_ARM -----
-    b2000     2414  proc/boot/.script [file] b1739f953c3211680e01adf832f9298e
+    b2000     2400  proc/boot/.script [file] fadd7299ba56f23f111a707f15c6c883
                        gid=0 uid=0 mode=0666 mtime=599e7ad7 ino=00000003 
                        procmgr_symlink '../../proc/boot/libc.so.3' '/usr/lib/ldqnx.so.2'
                        display_msg ''
@@ -31,7 +31,7 @@
 '
                        PATH=:/proc/boot:/bin:/usr/bin:/sbin:/usr/sbin devc-seromap -v -F -O4096 -I4096 -b500000 -c48000000/16 0x4806a000^2,104 -u2 &
                        waitfor 5.0 /dev/ser2
-                       PATH=:/proc/boot:/bin:/usr/bin:/sbin:/usr/sbin slogger -c /tmp/slogger.log &
+                       PATH=:/proc/boot:/bin:/usr/bin:/sbin:/usr/sbin slogger &
                        PATH=:/proc/boot:/bin:/usr/bin:/sbin:/usr/sbin pipe &
                        PATH=:/proc/boot:/bin:/usr/bin:/sbin:/usr/sbin mqueue &
                        PATH=:/proc/boot:/bin:/usr/bin:/sbin:/usr/sbin resource_seed dma=0,31
@@ -737,24 +737,30 @@
   229e000     98b4  proc/boot/top [file] ab931a6de1d9539a76b02e05bc7bf566
                        gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000f5 OE
                        ----- top - ELF32LE ET_EXEC EM_ARM -----
-  22a8000      43c  usr/lib/graphics/omap5430ES2_0/graphics_l.conf [file] a8a91d91cd621e89da129842de04105d
-                       gid=0 uid=0 mode=0644 mtime=599e79f7 ino=000000f6 
-  22a9000      5ee  usr/lib/graphics/omap5430ES2_0/graphics_p.conf [file] 5cd08513925f073957bd492251a4ca04
-                       gid=0 uid=0 mode=0644 mtime=599e79f7 ino=000000f7 
+  22a8000     36e8  proc/boot/od [file] 2e538125a9545260679692fd61ebd8b6
+                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000f6 OE
+                       ----- od - ELF32LE ET_EXEC EM_ARM -----
+  22ac000     7448  proc/boot/nslogutil [file] b1049cda957c651003d3f8cb0869ed24
+                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000f7 OE
+                       ----- nslogutil - ELF32LE ET_EXEC EM_ARM -----
+  22b4000      43c  usr/lib/graphics/omap5430ES2_0/graphics_l.conf [file] a8a91d91cd621e89da129842de04105d
+                       gid=0 uid=0 mode=0644 mtime=599e79f7 ino=000000f8 
+  22b5000      5ee  usr/lib/graphics/omap5430ES2_0/graphics_p.conf [file] 5cd08513925f073957bd492251a4ca04
+                       gid=0 uid=0 mode=0644 mtime=599e79f7 ino=000000f9 
      ----     ----  test [dir]
-                       gid=0 uid=0 mode=0755 mtime=00000000 ino=000000f8 
-  22aa000      86b  test/1U5T.tar.gz [file] 42805f6ecd30b39252c28d3cc790cd47
-                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000f9 OE
-  22ab000     62aa  test/HB5T.TAR.GZ [file] 849a349ec469a753a249ffaf65958a7a
-                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000fa OE
-  22b2000     1549  test/HB5T.ZIP [file] 8305f701615303d6aba732dfaf2d9bac
+                       gid=0 uid=0 mode=0755 mtime=00000000 ino=000000fa 
+  22b6000      86b  test/1U5T.tar.gz [file] 42805f6ecd30b39252c28d3cc790cd47
                        gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000fb OE
-  22b4000      79d  test/LU5T.TAR.GZ [file] b611221c6e50c2f9f0d1412281389ff6
+  22b7000     62aa  test/HB5T.TAR.GZ [file] 849a349ec469a753a249ffaf65958a7a
                        gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000fc OE
-     ----     ----  test/ssh [dir]
-                       gid=0 uid=0 mode=0755 mtime=00000000 ino=000000fd 
-  22b5000   2cbba7  test/ssh/sync3_open_ssh.zip [file] d376473492f5663f2dd370b426f25adf
+  22be000     1549  test/HB5T.ZIP [file] 8305f701615303d6aba732dfaf2d9bac
+                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000fd OE
+  22c0000      79d  test/LU5T.TAR.GZ [file] b611221c6e50c2f9f0d1412281389ff6
                        gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000fe OE
-  2581000    87a3d  test/ssh/sync_ssh.tar.gz [file] e792875bae7ae832f4b3ccc576f6f18a
-                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c00000ff OE
-Checksums: image=0xd8956370 startup=0x408f242c
+     ----     ----  test/ssh [dir]
+                       gid=0 uid=0 mode=0755 mtime=00000000 ino=000000ff 
+  22c1000   2cbba7  test/ssh/sync3_open_ssh.zip [file] d376473492f5663f2dd370b426f25adf
+                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c0000100 OE
+  258d000    87a3d  test/ssh/sync_ssh.tar.gz [file] e792875bae7ae832f4b3ccc576f6f18a
+                       gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c0000101 OE
+Checksums: image=0x2486f072 startup=0x408ced8c
