@@ -2,7 +2,7 @@
         0        8  *.boot
         8      100  Startup-header flags1=0xd flags2=0 paddr_bias=0
                        preboot_size=0x8
-                       image_paddr=0x80100008 stored_size=0xd9d1b4
+                       image_paddr=0x80100008 stored_size=0xd9da8c
                        startup_size=0x1a108 imagefs_size=0x2605ef4
                        ram_paddr=0x80100008 ram_size=0x261fffc
                        startup_vaddr=0x8010097c
@@ -11,7 +11,7 @@
                        flags=0x4 script=3 boot=e0000002 mntflg=0
     1a16c     36cc  Image-directory
      ----     ----  Root-dirent [dir]
-                       gid=0 uid=0 mode=0755 mtime=65353b0e ino=00000001 
+                       gid=0 uid=0 mode=0755 mtime=65358e59 ino=00000001 
     1e000    94000  proc/boot/procnto-smp-instr [file] 25390d0f32c9b551e4de91dd5f2d6586
                        gid=0 uid=0 mode=0777 mtime=599e79ea ino=e0000002 BOE
                        ----- procnto-smp-instr - ELF32LE ET_EXEC EM_ARM -----
@@ -633,16 +633,16 @@
   1f20000    596d0  usr/sbin/SS_PowerManager [file] 5ab6f511a15d6fc81b670e60baebad53
                        gid=0 uid=0 mode=01755 mtime=599e79f8 ino=800000d1 E
                        ----- SS_PowerManager - ELF32LE ET_EXEC EM_ARM -----
-  1f80000    21ef4  usr/sbin/SS_SCM_IPC [file] e915134ee5459115595a11d8d7b0c5aa
+  1f80000    23818  usr/sbin/SS_SCM_IPC [file] 5da27b3c3243eb78b2f7f90dcf656119
                        gid=0 uid=0 mode=01755 mtime=599e79f8 ino=800000d2 E
                        ----- SS_SCM_IPC - ELF32LE ET_EXEC EM_ARM -----
-  1fa2000     1cd4  usr/sbin/NS_ExtractVerify [file] 49c868663864b70bbd4e3cd4d38a5bf1
+  1fa4000     1cd4  usr/sbin/NS_ExtractVerify [file] 49c868663864b70bbd4e3cd4d38a5bf1
                        gid=0 uid=0 mode=01755 mtime=599e79f8 ino=800000d3 E
                        ----- NS_ExtractVerify - ELF32LE ET_EXEC EM_ARM -----
-  1fa4000     32d0  usr/sbin/hwid [file] f16b8f86ea88db83d15c7e6c138b048f
+  1fa6000     32d0  usr/sbin/hwid [file] f16b8f86ea88db83d15c7e6c138b048f
                        gid=0 uid=0 mode=01755 mtime=599e7ab9 ino=800000d4 E
                        ----- hwid - ELF32LE ET_EXEC EM_ARM -----
-  1fa8000     4948  usr/sbin/mqueue [file] ca89f5edb9df7f5c250fadb739ab9ea6
+  1faa000     4948  usr/sbin/mqueue [file] ca89f5edb9df7f5c250fadb739ab9ea6
                        gid=0 uid=0 mode=01755 mtime=599e6b32 ino=800000d5 E
                        ----- mqueue - ELF32LE ET_EXEC EM_ARM -----
   1fb0000    5c42b  usr/sbin/screen [file] 220752d4d9b350a91fcae348fc092f20
@@ -763,4 +763,4 @@
                        gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c0000100 OE
   258d000    87a3d  test/ssh/sync_ssh.tar.gz [file] e792875bae7ae832f4b3ccc576f6f18a
                        gid=0 uid=0 mode=0777 mtime=599e6b46 ino=c0000101 OE
-Checksums: image=0x2486f072 startup=0x408ced8c
+Checksums: image=0x869d2e71 startup=0x408ce4b4

@@ -1,0 +1,24 @@
+Sent a Link Setup Request
+--> 00 02 01 e2 01 f8 e4 f3 12 3a 21 e0 03 5a 02 00 
+Link is presently down ,  Got a Link Setup Request 
+Incoming Message Signature : 557454067 our signature :557454067 , incoming TB :0 and our TB: 1 
+Sent a Link Setup Response 
+--> 00 02 01 e2 01 f9 e4 f3 12 3a 21 e0 03 5b 02 00 
+Sent a Link Setup Response 
+Link is presently down ,  Got a Link Setup Request 
+Incoming Message Signature : 557454067 our signature :557454067 , incoming TB :0 and our TB: 1 
+--> 00 02 01 e2 01 fa e4 f3 12 3a 21 e0 03 5c 02 00 
+Received heart beat
+Sent a Link Setup Response 
+Link is presently down ,  Got a Link Setup Request 
+Incoming Message Signature : 557454067 our signature :557454067 , incoming TB :0 and our TB: 1 
+--> 00 02 01 e2 01 fb e4 f3 12 3a 21 e0 03 5d 02 00 
+Link is presently down ,  Got a Link Setup Request 
+Incoming Message Signature : 557454067 our signature :557454067 , incoming TB :0 and our TB: 1 
+Sent a Link Setup Response 
+--> 00 02 01 e2 02 fc d4 e1 ff 00 
+--> 00 02 20 e2 40 a0 01 02 20 04 a0 c0 01 00 
+Link is presently down ,  Got a Link Setup Complete 
+Link setup Complete ...Sending watchdog and filter messages....
+--> 00 04 12 01 40 e1 53 00 
+startSendingWatchDogMessageToVMCU/648/=-

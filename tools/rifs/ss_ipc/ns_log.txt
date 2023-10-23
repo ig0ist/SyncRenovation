@@ -1,0 +1,95 @@
+
+01/01/1970 00:00:01.242/1/23/IPC_MID/main/146/= Starting IPC Process !!
+01/01/1970 00:00:01.242/2/23/IPC_MID/setBoardType/783/= Board Type ENV does not exist , set to PRODUCTION 1
+01/01/1970 00:00:01.247/3/23/IPC_MID/IpcUartConfig/2037/= Configuring UART of 500000 Kpbs Speed
+01/01/1970 00:00:01.265/1/31/PowerManager/PasOnInitialization/100/=NPSynchronousReadPersistentDataSize Failed. eStatus=26
+01/01/1970 00:00:01.265/2/31/PowerManager/EPasStatus PasOnInitialization(void*)/165/=Updating default values!
+01/01/1970 00:00:01.265/3/9/PowerManager/PasUnsubscribeNotificationWithCallback/527/=PowerManager:Error:Cannot find notification [VehicleSrv/ClockTime]
+01/01/1970 00:00:01.266/4/31/PowerManager/PMInitialization/375/=PowerManager Persistence ERROR
+01/01/1970 00:00:01.266/5/31/PowerManager/VOID PowerManager::ReadVHMConfig()/2097/=SyncGen3.cfg file doesn't exists, So, VHM counters should have default values
+01/01/1970 00:00:01.266/6/31/PowerManager/PMInitialization/389/=m_eRebootSourceFlag = -1, m_fMasterReset_Status = 0, m_pStateTransitionSource = 0, vhm_DayCount = 0, vhm_IgnitionCount = 0, vhm_RequestCount = 0, Ignition_count = 0, eLastActiveUser = 5
+01/01/1970 00:00:01.268/4/23/IPC_MID/GetIpcCfgSignature/793/=RETURNING PRODUCTION SIGNATURE
+01/01/1970 00:00:01.268/5/23/IPC_MID/SendLinkSetup/496/= Sent a Link Setup Request
+01/01/1970 00:00:01.270/7/31/PowerManager/Init/120/=device open failed. error =  /dev/disp_rm No such file or directory(2)
+01/01/1970 00:00:01.270/8/31/PowerManager/RegisterWithSystemManager/154/=PasSubscribeNotificationsWithCallback Called
+01/01/1970 00:00:01.271/9/31/PowerManager/RegisterWithSystemManager/161/=PasSubscribeNotificationsWithCallback returned Status:0x0
+01/01/1970 00:00:01.274/6/23/IPC_MID/IpcLcTask/819/= Link is presently down ,  Got a Link Setup Request
+01/01/1970 00:00:01.274/7/23/IPC_MID/GetIpcCfgSignature/793/=RETURNING PRODUCTION SIGNATURE
+01/01/1970 00:00:01.274/8/23/IPC_MID/IpcLcTask/831/= Incoming Message Signature : 557454067 our signature :557454067 , incoming TB :0 and our TB: 1
+01/01/1970 00:00:01.274/9/23/IPC_MID/GetIpcCfgSignature/793/=RETURNING PRODUCTION SIGNATURE
+01/01/1970 00:00:01.274/10/23/IPC_MID/SendLinkSetupResponse/545/= Sent a Link Setup Response
+01/01/1970 00:00:01.286/11/23/IPC_MID/SendLinkSetupResponse/545/= Sent a Link Setup Response
+01/01/1970 00:00:01.295/12/23/IPC_MID/IpcLcTask/819/= Link is presently down ,  Got a Link Setup Request
+01/01/1970 00:00:01.295/13/23/IPC_MID/GetIpcCfgSignature/793/=RETURNING PRODUCTION SIGNATURE
+01/01/1970 00:00:01.295/14/23/IPC_MID/IpcLcTask/831/= Incoming Message Signature : 557454067 our signature :557454067 , incoming TB :0 and our TB: 1
+01/01/1970 00:00:01.295/15/23/IPC_MID/GetIpcCfgSignature/793/=RETURNING PRODUCTION SIGNATURE
+01/01/1970 00:00:01.298/16/23/IPC_MID/SendLinkSetupResponse/545/= Sent a Link Setup Response
+01/01/1970 00:00:01.310/17/23/IPC_MID/SendLinkSetupResponse/545/= Sent a Link Setup Response
+01/01/1970 00:00:01.316/18/23/IPC_MID/IpcLcTask/819/= Link is presently down ,  Got a Link Setup Request
+01/01/1970 00:00:01.316/19/23/IPC_MID/GetIpcCfgSignature/793/=RETURNING PRODUCTION SIGNATURE
+01/01/1970 00:00:01.316/20/23/IPC_MID/IpcLcTask/831/= Incoming Message Signature : 557454067 our signature :557454067 , incoming TB :0 and our TB: 1
+01/01/1970 00:00:01.316/21/23/IPC_MID/GetIpcCfgSignature/793/=RETURNING PRODUCTION SIGNATURE
+01/01/1970 00:00:01.322/22/23/IPC_MID/GetIpcCfgSignature/793/=RETURNING PRODUCTION SIGNATURE
+01/01/1970 00:00:01.322/23/23/IPC_MID/SendLinkSetup/496/= Sent a Link Setup Request
+01/01/1970 00:00:01.343/24/23/IPC_MID/GetIpcCfgSignature/793/=RETURNING PRODUCTION SIGNATURE
+01/01/1970 00:00:01.343/25/23/IPC_MID/SendLinkSetup/496/= Sent a Link Setup Request
+01/01/1970 00:00:01.346/26/23/IPC_MID/IpcLcTask/819/= Link is presently down ,  Got a Link Setup Request
+01/01/1970 00:00:01.346/27/23/IPC_MID/GetIpcCfgSignature/793/=RETURNING PRODUCTION SIGNATURE
+01/01/1970 00:00:01.346/28/23/IPC_MID/IpcLcTask/831/= Incoming Message Signature : 557454067 our signature :557454067 , incoming TB :0 and our TB: 1
+01/01/1970 00:00:01.346/29/23/IPC_MID/GetIpcCfgSignature/793/=RETURNING PRODUCTION SIGNATURE
+01/01/1970 00:00:01.346/30/23/IPC_MID/SendLinkSetupResponse/545/= Sent a Link Setup Response
+01/01/1970 00:00:01.358/31/23/IPC_MID/SendLinkSetupResponse/545/= Sent a Link Setup Response
+01/01/1970 00:00:01.361/32/23/IPC_MID/IpcLcTask/923/= Link is presently down ,  Got a Link Setup Complete
+01/01/1970 00:00:01.361/33/23/IPC_MID/UpdateWDMonitorSentInfo/126/=WDMonitor timer started
+01/01/1970 00:00:03.362/10/23/PowerManager/EPasStatus PowerManager::IpcMsgHandler(void*)/189/=++IPC_OPC_SET_PM_STATE RECEIVED++
+01/01/1970 00:00:03.362/11/23/PowerManager/VOID PowerManager::publishPowerLevels(void*, EPmPowerLevels)/469/=SWHOOK:: Power Level Publish: ePmPowerLevel1: targetmode = -1 statetransitionsource= 0 PwrMgr_PrevState=1 MasterReset_Status=0 UserID=5
+01/01/1970 00:00:03.362/12/31/PowerManager/UpdateVoltage/178/=ERROR: Failed to update voltage to  /dev/disp_rm
+01/01/1970 00:00:03.362/13/23/PowerManager/VOID PowerManager::PerformFordPowerModing(void*, UI_8*, UI_32)/1154/=Test pm_state=0
+01/01/1970 00:00:03.362/14/23/PowerManager/VOID PowerManager::PerformFordPowerModing(void*, UI_8*, UI_32)/1247/=++PowerON from UnPowered state, tid=2,pm_state=0,gPm_state=3,bPm_state=7,pm_level=0,pm_status=0xa5
+01/01/1970 00:00:03.362/34/23/IPC_MID/sendIPCPmSetNmStatusToVMCU/1260/=<<<<<=== Successfully sent SET_NM_STATUS to VMCU (TID :0 )  <<<<<===
+01/01/1970 00:00:03.363/15/23/PowerManager/VOID StateTransitionSource::setStateTransition(PowerStateTransitionRequest_Message, PowerStateTransitionRequest_Message)/1790/=The state transition updated is = 1
+01/01/1970 00:00:03.364/35/23/IPC_MID/IpcLinkMonitorTimerStart/395/=IPC Link monitor timer started
+01/01/1970 00:00:03.386/36/23/IPC_MID/HandleSetNmStatusCompleteMessage/1313/====>>>>> Successfully sent SET_NM_STATUS_COMPLETE ( TID :0 ) to Power Manager Service ===>>>>>
+01/01/1970 00:00:03.386/16/30/PowerManager/VOID PowerManager::PerformFordNMStatusCompleteICAN(UI_8)/543/= NMStatus Request Module List is Empty!
+01/01/1970 00:00:03.388/17/23/PowerManager/EPasStatus PowerManager::IpcMsgHandler(void*)/243/=++IPC_OPC_GET_PM_REBOOT_SOURCE_COMPLETE RECEIVED++
+01/01/1970 00:00:03.388/18/23/PowerManager/VOID PowerManager::PerformFordRebootSource(UI_8*, UI_32)/1337/=SWHOOK:: The reboot source updated by VMCU is = 64
+01/01/1970 00:00:03.404/19/23/PowerManager/EPasStatus PowerManager::IpcMsgHandler(void*)/230/=++IPC_OPC_GET_PM_WAKE_SOURCE_COMPLETE RECEIVED++
+01/01/1970 00:00:03.404/20/23/PowerManager/VOID PowerManager::PerformFordWakeSource(void*, UI_8*, UI_32)/1479/=SWHOOK:: CCPU Powered up due to = 5 (0-Normal Power Cycle, 1-CCPU Reboot, 5- Battery connect)
+01/01/1970 00:00:03.404/21/23/PowerManager/VOID PowerManager::PerformFordWakeSource(void*, UI_8*, UI_32)/1480/=SWHOOK:: The wakeup source updated by VMCU is = 6
+01/01/1970 00:00:03.404/22/23/PowerManager/VOID PowerManager::PerformFordWakeSource(void*, UI_8*, UI_32)/1481/=SWHOOK:: The reboot source type= 1 (1- Power, 0- Other)
+01/01/1970 00:00:03.404/23/23/PowerManager/VOID PowerManager::PerformFordWakeSource(void*, UI_8*, UI_32)/1554/=The WakeUp State -- 1! (0-WARM 1-COLD 2-RESET)
+01/01/1970 00:00:03.404/24/23/PowerManager/VOID PowerManager::PerformFordWakeSource(void*, UI_8*, UI_32)/1644/=The Wake source updated is = 6
+01/01/1970 00:00:03.404/25/23/PowerManager/VOID PowerManager::publishPowerLevels(void*, EPmPowerLevels)/473/=SWHOOK:: Power Level Publish: ePmPowerLevel2: targetmode = 1 statetransitionsource= 6 PwrMgr_PrevState=1 MasterReset_Status=0 UserID=5
+01/01/1970 00:00:03.404/26/23/PowerManager/VOID PowerManager::publishPowerLevels(void*, EPmPowerLevels)/482/=SWHOOK:: Power Level Publish: ePmPowerLevel3: targetmode = 1 statetransitionsource= 6 PwrMgr_PrevState=1 MasterReset_Status=0 UserID=5
+01/01/1970 00:00:03.405/27/31/PowerManager/CAN_SHADOW_Handle is NULL/369/=VOID PowerManager::SendHMIAudioMode(void*, EHMIModeStatus)
+01/01/1970 00:00:06.363/37/31/IPC_MID/WDMonitorTimeout/197/=total byte: 875
+01/01/1970 00:00:11.363/38/31/IPC_MID/WDMonitorTimeout/197/=total byte: 1576
+01/01/1970 00:00:16.363/39/31/IPC_MID/WDMonitorTimeout/197/=total byte: 2277
+01/01/1970 00:00:21.363/40/31/IPC_MID/WDMonitorTimeout/197/=total byte: 2978
+01/01/1970 00:00:26.363/41/31/IPC_MID/WDMonitorTimeout/197/=total byte: 3679
+01/01/1970 00:00:31.363/42/31/IPC_MID/WDMonitorTimeout/197/=total byte: 4380
+01/01/1970 00:00:36.363/43/31/IPC_MID/WDMonitorTimeout/197/=total byte: 5081
+01/01/1970 00:00:41.363/44/31/IPC_MID/WDMonitorTimeout/197/=total byte: 5783
+01/01/1970 00:00:46.363/45/31/IPC_MID/WDMonitorTimeout/197/=total byte: 6485
+01/01/1970 00:00:51.363/46/31/IPC_MID/WDMonitorTimeout/197/=total byte: 7187
+01/01/1970 00:00:56.363/47/31/IPC_MID/WDMonitorTimeout/197/=total byte: 7889
+01/01/1970 00:01:01.363/48/31/IPC_MID/WDMonitorTimeout/197/=total byte: 8591
+01/01/1970 00:01:06.363/49/31/IPC_MID/WDMonitorTimeout/197/=total byte: 9292
+01/01/1970 00:01:11.363/50/31/IPC_MID/WDMonitorTimeout/197/=total byte: 9993
+01/01/1970 00:01:16.363/51/31/IPC_MID/WDMonitorTimeout/197/=total byte: 10694
+01/01/1970 00:01:21.363/52/31/IPC_MID/WDMonitorTimeout/197/=total byte: 11396
+01/01/1970 00:49:21.388/3669/31/IPC_MID/HandleIBDGetOIDDataRequest/231/=Error while sending a message to the recipient : VS_DiagService
+01/01/1970 00:49:26.363/3675/31/IPC_MID/WDMonitorTimeout/197/=total byte: 416448
+01/01/1970 00:49:26.388/3676/31/IPC_MID/HandleIBDGetOIDDataRequest/231/=Error while sending a message to the recipient : VS_DiagService
+01/01/1970 00:49:31.363/3682/31/IPC_MID/WDMonitorTimeout/197/=total byte: 417150
+01/01/1970 00:49:31.386/3683/31/IPC_MID/HandleIBDGetOIDDataRequest/231/=Error while sending a message to the recipient : VS_DiagService
+01/01/1970 00:49:36.363/3689/31/IPC_MID/WDMonitorTimeout/197/=total byte: 417852
+01/01/1970 00:49:36.388/3690/31/IPC_MID/HandleIBDGetOIDDataRequest/231/=Error while sending a message to the recipient : VS_DiagService
+01/01/1970 00:49:41.363/3696/31/IPC_MID/WDMonitorTimeout/197/=total byte: 418554
+01/01/1970 00:49:41.388/3697/31/IPC_MID/HandleIBDGetOIDDataRequest/231/=Error while sending a message to the recipient : VS_DiagService
+01/01/1970 00:49:46.363/3703/31/IPC_MID/WDMonitorTimeout/197/=total byte: 419257
+01/01/1970 00:49:46.386/3704/31/IPC_MID/HandleIBDGetOIDDataRequest/231/=Error while sending a message to the recipient : VS_DiagService
+01/01/1970 00:49:46.723/28/31/PowerManager/void PwrMonitor_Pulse_Handler(name_attach_t*)/299/=Low battery condition is detected
+01/01/1970 00:49:46.724/29/31/PowerManager/EPasStatus PowerManager::onEShutdownRequest(void*)/954/=Now In EShutdown Complete Pending State!Publishing E-Shutdown to applications!
+01/01/1970 00:49:46.724/30/31/PowerManager/UpdateVoltage/178/=ERROR: Failed to update voltage to  /dev/disp_rm
+01/01/1970 00:49:46.724/31/31/PowerManager/VOID PowerManager::publishPowerLevels(void*, EPmPowerLevels)/498/=Power Level Publish: ePmPowerLevelE
