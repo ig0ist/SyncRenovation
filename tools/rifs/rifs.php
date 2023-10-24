@@ -1,6 +1,7 @@
 <?php
 include_once __DIR__.'/DGBase.php';
 include_once __DIR__.'/WorkIFSFiles.php';
+ini_set('memory_limit', '2048M');
 
 
 /**
@@ -42,6 +43,11 @@ if (isset($settings['compare'])) {
 }
 if (isset($settings['cobs'])) {
     $n->cobs();
+    $run=true;
+}
+
+if (isset($settings['read'])) {
+    $n->read();
     $run=true;
 }
 if (isset($settings['new'])) {

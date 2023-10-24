@@ -294,6 +294,82 @@ https://github.com/justincpresley/go-cobs
 
  */
 
+    public function read()
+    {
+        $file=__DIR__.'/ss_ipc/exchange_log_4.txt';
+
+        $r=explode("\n",file_get_contents($file));
+        $o=[];
+        foreach ($r as $line)
+        {
+            if (stripos($line,'y_write   ')!==false)
+            {
+                $o[]=[true,'00',-1,-1];
+            } elseif (stripos($line,'write   ')!==false)
+            {
+
+                $md=[];
+                if (preg_match('|write\s*(\w{2})\s{1,}(\d)\/(\d)|ius',$line,$md) ) {
+                    $o[]=[true,strtoupper($md[1]),$md[2],$md[3]];
+                }
+//                echo $line."\n";
+//                exit;
+                // $o[]=[true,'0x'.trim(str_replace('write','',$line),]);
+            } elseif (stripos($line,'IPC_MID/?@/')) {
+                $md=[];
+                if (preg_match('|.*IPC_MID\/\?\@\/(\d+)\/=|ius',$line,$md))
+                {
+                    if ($md[1]>255) exit('BBAD'.$line);
+                    $o[]=[false,sprintf("%02X",$md[1]),-1,-1];
+                }
+            }
+            //
+
+        }
+
+        $f_msg=__DIR__.'/ss_ipc/exchange_log_4_';
+
+        $msg="";
+        $msgI="";
+        $msgO="";
+        $newLine = true;
+        foreach ($o as $item)
+        {
+
+            if ($item[0]===true) {
+                $msgO.=$item[1].' ';
+            } else {
+                $msgI.=$item[1].' ';
+            }
+
+
+            if ($newLine !== $item[0]) {
+                $msg.="\n".($item[0]?'<O':'>I').' ';
+                $msgI.="\n";
+                $msgO.="\n";
+                $newLine = $item[0];
+            }
+            // ---------------------------
+
+            $msg.=$item[1].' ';
+            if ($item[2]>0 && $item[2]===$item[3]) {
+                $msg.="\n";
+                $msgO.="\n";
+            }
+
+        }
+
+
+        file_put_contents($f_msg.'_all',$msg);
+        file_put_contents($f_msg.'_inn',str_ireplace("\n\n","\n",$msgI));
+        file_put_contents($f_msg.'_out',str_ireplace("\n\n","\n",$msgO));
+
+
+
+
+
+    }
+
     public function cobs()
     {
         $m=[
