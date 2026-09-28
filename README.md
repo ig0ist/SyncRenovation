@@ -66,6 +66,7 @@ ToDo
 - [ ] SSH Server 
 - [x] Support MY20 new Display 
 - [x] Support new EMMC
+- [x] Support downgrade to pre-3.3.19052 firmware (`PARTITION_TYPE=A`)
 - [ ] `jq` tool for read&work JSON files in sh
 - [ ] More and more docs
 
@@ -74,6 +75,26 @@ ToDo
 - [ ] install before finish boot
 - [ ] install before run `update_radio.sh`
 - [ ] install after all install in `update_radio.sh`
+
+
+## Downgrading to older firmware (`PARTITION_TYPE`)
+
+`partition` always lays out Type B (1.5GiB) `apps`/`rwdata` partitions,
+which is correct for 3.3.19052+ but leaves the eMMC mismatched from what a
+pre-3.3.19052 build (e.g. 3.0.23219, Type A -- 1GiB) actually expects. Add
+`PARTITION_TYPE=A` to your `reformat.lst` to use `partition_native` instead.
+Leave it unset (or set `B`) and you get the same Type B layout this tool has
+always produced. See [`docs/PARTITION_TYPE.md`](docs/PARTITION_TYPE.md) and
+[`docs/UPDATE_PART_SIZE_GATE.md`](docs/UPDATE_PART_SIZE_GATE.md) (needed
+alongside it for a Type A downgrade to actually complete) for details.
+
+**No separate Jailbreak/Daemon install needed afterward.** `update_radio.sh`
+(unmodified, stock behavior) already writes a `usb_installer.sh` watcher
+into `/fs/mp/scripts/` and wires it into `startup_gf.sh` on every reformat
+-- it runs on every boot and auto-executes `/fs/usb0/SyncMyMod/autoinstall.sh`
+whenever a USB stick with that path is inserted. Confirmed live: right after
+a reformat through this tool, a plain `SyncMyMod`-format package (no prior
+JB/Daemon install) ran immediately.
 
 
 ## LanUSB
@@ -97,6 +118,12 @@ Login `root`
 
 # Changelog
 
+### (unreleased) `3.0-downgrade-support` branch
+
+* Add `PARTITION_TYPE` support: `partition_native` (2-byte patch of
+  `partition`, produces the pre-3.3.19052 Type A / 1GiB `apps`/`rwdata`
+  layout) + `update_radio.sh`/`reformat.lst` field, Type B (unchanged
+  default) unless `PARTITION_TYPE=A` is set. See `docs/PARTITION_TYPE.md`.
 
 ### 2023-10-21 V6.4.3
 
