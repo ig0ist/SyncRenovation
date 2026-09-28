@@ -124,6 +124,13 @@ Login `root`
   `partition`, produces the pre-3.3.19052 Type A / 1GiB `apps`/`rwdata`
   layout) + `update_radio.sh`/`reformat.lst` field, Type B (unchanged
   default) unless `PARTITION_TYPE=A` is set. See `docs/PARTITION_TYPE.md`.
+* Fix `update_part`'s "Image size is less than partition size" hard-reject
+  -- was blocking installation of any image genuinely smaller than its
+  target partition (which a correct Type A `apps.img` always is relative to
+  this tool's internal expectations), even though that's a safe, valid
+  layout (unused trailing space, same as a partially-empty disk). The
+  overflow-safety "image bigger than partition" check is untouched. See
+  `docs/UPDATE_PART_SIZE_GATE.md`.
 
 ### 2023-10-21 V6.4.3
 
