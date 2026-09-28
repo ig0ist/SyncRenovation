@@ -522,6 +522,13 @@ if [ -e /fs/usb0/reformat.lst ] ; then
 	MAP=$(read_lst MAP $MULTIPLE_ENTRY_PKG_SPT)
 	MAP_LIC=$(read_lst MAP_LIC)
 	ENH_DAB=$(read_lst ENH_DAB)
+	# Optional. Selects the eMMC partition-size layout: "A" = 1GiB apps/rwdata
+	# (what older, pre-3.3.19052 firmware -- e.g. 3.0.23219 -- actually ships with),
+	# "B" = 1.5GiB (what this tool has always produced, and what 3.3.19052+ expects).
+	# Unset, empty, or any value other than "A" defaults to B -- the same layout this
+	# tool has always built, so existing users/scripts see no change. See
+	# docs/PARTITION_TYPE.md.
+	PARTITION_TYPE=$(read_lst PARTITION_TYPE)
 else
 	echo "Error update packages not found..." >> $LOG_FILE	     
 	echo "Error update packages not found..." >> $LOG_USB_FILE
@@ -546,7 +553,16 @@ fi
 echo "Repartitioning eMMC..." >> $LOG_FILE
 echo "Repartitioning eMMC..." >> $LOG_USB_FILE
 echo "Repartitioning eMMC..." > $DISPLAY
-partition >> $LOG_FILE
+
+if [ "$PARTITION_TYPE" = "A" ]; then
+	echo "PARTITION_TYPE=A -- using Type A (1GiB, pre-3.3.19052 native) partition layout..." >> $LOG_FILE
+	echo "PARTITION_TYPE=A -- using Type A (1GiB, pre-3.3.19052 native) partition layout..." >> $LOG_USB_FILE
+	partition_native >> $LOG_FILE
+else
+	echo "PARTITION_TYPE=B (default) -- using Type B (1.5GiB) partition layout..." >> $LOG_FILE
+	echo "PARTITION_TYPE=B (default) -- using Type B (1.5GiB) partition layout..." >> $LOG_USB_FILE
+	partition >> $LOG_FILE
+fi
 
 if [ $? -ne 0 ]; then
 	echo "Failed to partition eMMC Method 1..." >> $LOG_FILE

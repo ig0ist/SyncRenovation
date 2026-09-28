@@ -186,6 +186,7 @@
 [type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=4K] proc/boot/mv=proc/boot/mv
 [type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=4K] proc/boot/on=proc/boot/on
 [type=file gid=0 uid=0 perms=01777 mtime=1503558337 +raw flags=16 phys_align=4K] proc/boot/partition=proc/boot/partition
+[type=file gid=0 uid=0 perms=01777 mtime=1503558337 +raw flags=16 phys_align=4K] proc/boot/partition_native=proc/boot/partition_native
 [type=file gid=0 uid=0 perms=01777 mtime=1503554354 +raw flags=16 phys_align=4K] proc/boot/pipe=proc/boot/pipe
 [type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=64K] proc/boot/pidin=proc/boot/pidin
 [type=file gid=0 uid=0 perms=01777 mtime=1503554355 +raw flags=16 phys_align=4K] proc/boot/umount=proc/boot/umount
